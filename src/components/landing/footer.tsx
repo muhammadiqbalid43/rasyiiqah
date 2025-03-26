@@ -2,7 +2,7 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-    <div className="py-12 bg-muted">
+    <footer className="py-12 text-gray-300 bg-gray-900">
       <div className="container mx-auto">
         <div className="grid grid-cols-1 gap-6 md:grid-cols-4">
           <div>
@@ -77,7 +77,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-    </div>
+    </footer>
   );
 };
 
