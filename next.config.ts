@@ -8,6 +8,8 @@ const nextConfig: NextConfig = {
       "cf.bstatic.com",
       "dynamic-media-cdn.tripadvisor.com",
       "media-cdn.tripadvisor.com",
+      "placehold.co",
+      "fakeimg.pl",
     ],
   },
 };
