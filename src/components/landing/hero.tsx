@@ -4,15 +4,15 @@ import { Button } from "../ui/button";
 
 const Hero = () => {
   return (
-    <div className="relative">
+    <div className="relative ring-1">
       <div className="absolute inset-0 z-10 bg-black/60" />
-      <div className="relative h-[400px] ">
+      <div className="relative  h-[400px] ">
         <Image
           src="https://fakeimg.pl/1200x400"
           alt=""
           width={1400}
           height={400}
-          className="object-cover"
+          className="object-cover h-[400px]"
         />
       </div>
       <div className="container absolute inset-0 z-20 flex flex-col items-center justify-center text-center text-white">
