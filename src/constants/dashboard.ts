@@ -31,8 +31,8 @@ export const data = {
       icon: Package,
     },
     {
-      title: "Bookings",
-      url: "#",
+      title: "Cabang",
+      url: "/dashboard/branch",
       icon: Calendar,
     },
     {
