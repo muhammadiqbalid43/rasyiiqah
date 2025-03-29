@@ -9,13 +9,16 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import Image from "next/image";
+import Link from "next/link";
 
 const UmrohPackages = () => {
   return (
     <Card>
       <CardHeader className="flex flex-row items-center justify-between">
         <CardTitle>Umroh Packages</CardTitle>
-        <Button size="sm">Add Package</Button>
+        <Button size="sm">
+          <Link href="/dashboard/umroh-packages-add">Add Package</Link>
+        </Button>
       </CardHeader>
       <CardContent>
         <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
