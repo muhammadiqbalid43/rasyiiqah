@@ -18,23 +18,22 @@ const Hero = () => {
       <div className="container absolute inset-0 z-20 flex flex-col items-center justify-center text-center text-white">
         <Badge className="mb-4">Spiritual Journey</Badge>
         <h1 className="mb-6 text-4xl">
-          Experience the Sacred Journey of Umrah
+          Perjalanan Umroh yang Nyaman dan Amanah
         </h1>
-        <p className="mb-8 max-w-[600px] text-lg text-gray-200">
-          {" "}
-          Embark on a spiritual journey to the holy cities of Mecca and Medina
-          with our comprehensive and comfortable Umrah packages.
+        <p className="max-w-2xl mx-auto mb-8 text-lg text-gray-200 sm:text-xl">
+          Layanan umroh terpercaya dengan pengalaman spiritual yang tak
+          terlupakan
         </p>
         <div className="flex flex-col gap-4 md:flex-row">
           <Button size="lg" className="bg-primary hover:bg-primary/90">
-            Explore Packages
+            Konsultasi Sekarang
           </Button>
           <Button
             size="lg"
             variant="outline"
             className="text-black border-white hover:bg-white/10"
           >
-            Contact Us
+            Lihat Paket
           </Button>
         </div>
       </div>
