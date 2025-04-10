@@ -1,86 +1,115 @@
-import { CreateBranchDialog } from "@/components/branch/branch-dialog";
-import BranchList from "@/components/branch/branch-list";
-import BranchPagination from "@/components/branch/branch-pagination";
+import BranchCreateDialog from "@/components/branch/branch-create-dialog";
 import { Button } from "@/components/ui/button";
-import { useReadBranch } from "@/queries/branch-queries";
-
+import {
+  Table,
+  TableBody,
+  TableCell,
+  TableHead,
+  TableHeader,
+  TableRow,
+} from "@/components/ui/table";
+import { useBranches } from "@/queries/branch-queries";
+import { Branch, PaginationParams } from "@/types/branch";
+import Image from "next/image";
 import { useState } from "react";
 
-// const fetchBranches = async (): Promise<Branch[]> => {
-//   const response = await axios.get(
-//     "http://103.127.139.176:8082/api/v1/branches"
-//   );
-//   return response.data.data;
-// };
+const IMAGE_BASE_URL = process.env.NEXT_PUBLIC_API_IMAGE_URL;
 
-const BranchPage = () => {
-  const [page, setPage] = useState(1);
-  const { data, isLoading, error, refetch } = useReadBranch(page);
+const BranchesPage = () => {
+  const [pagination, setPagination] = useState<PaginationParams>({
+    page: 1,
+    per_page: 10,
+  });
 
-  const handlePageChange = (newPage: number) => {
-    setPage(newPage);
+  const { data, isLoading, isError } = useBranches(pagination);
+
+  const handleNextPage = () => {
+    setPagination((prev: PaginationParams) => ({
+      ...prev,
+      page: (prev?.page ?? 1) + 1,
+    }));
   };
 
-  const handleSuccess = () => {
-    refetch();
-
-    if (error) {
-      return (
-        <div className="container py-8 mx-auto">
-          <div className="text-center text-red-500">
-            Error loading branches: {error.message}
-          </div>
-        </div>
-      );
+  const handlePrevPage = () => {
+    if ((pagination.page ?? 1) > 1) {
+      setPagination((prev) => ({
+        ...prev,
+        page: (prev?.page ?? 1) - 1,
+      }));
     }
   };
-  // const {
-  //   data: branches,
-  //   isLoading,
-  //   error,
-  //   refetch,
-  // } = useQuery({
-  //   queryKey: ["branches"],
-  //   queryFn: fetchBranches,
-  // });
 
   if (isLoading) return <div>Loading...</div>;
-  if (error) return <div>Error loading branches</div>;
+  if (isError) return <div>Error loading branches</div>;
   return (
     <div className="container py-8 mx-auto">
       <div className="flex items-center justify-between mb-6">
         <h1 className="text-2xl font-bold">Branches</h1>
-        <CreateBranchDialog onSuccess={handleSuccess}>
-          <Button>Add New Branch</Button>
-        </CreateBranchDialog>
+        <BranchCreateDialog />
       </div>
 
-      <div>
-        <BranchList branches={data?.data || []} isLoading={isLoading} />
-
-        {data && (
-          <BranchPagination
-            currentPage={page}
-            totalPages={page}
-            onPageChange={handlePageChange}
-          />
-        )}
+      <div className="border rounded-lg">
+        <Table>
+          <TableHeader>
+            <TableRow>
+              <TableHead>Name</TableHead>
+              <TableHead>Phone</TableHead>
+              <TableHead>Address</TableHead>
+              <TableHead>Map URL</TableHead>
+              <TableHead>Image</TableHead>
+            </TableRow>
+          </TableHeader>
+          <TableBody>
+            {data?.data?.map((branch: Branch) => (
+              <TableRow key={branch.id}>
+                <TableCell>{branch.name}</TableCell>
+                <TableCell>{branch.phone}</TableCell>
+                <TableCell>{branch.address}</TableCell>
+                <TableCell>
+                  {/* <Link
+                    href={branch.map_url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-blue-500 hover:underline"
+                  >
+                    View Map
+                  </Link> */}
+                  <p>{branch.map_url}</p>
+                </TableCell>
+                <TableCell>
+                  {/* ✅ Tambahkan tag img untuk menampilkan gambar */}
+                  {branch.image && (
+                    <Image
+                      src={`${IMAGE_BASE_URL}/storage/branches/${branch.image}`}
+                      alt={`Branch ${branch.name}`}
+                      className="object-cover w-10 h-10 rounded-md"
+                      width={40}
+                      height={40}
+                    />
+                  )}
+                </TableCell>
+              </TableRow>
+            ))}
+          </TableBody>
+        </Table>
       </div>
 
-      {/* <div className="grid gap-4">
-        {branches?.map((branch) => (
-          <div key={branch.id} className="p-4 border rounded-lg">
-            <h2 className="text-xl font-semibold">{branch.name}</h2>
-            <p>{branch.address}</p>
-            <p>{branch.phone}</p>
-            <Image src={branch.image} width={100} height={100} alt="hello" />
-          </div>
-        ))}
-      </div> */}
-
-      {/* You would add your branches list here */}
+      <div className="flex items-center justify-between mt-4">
+        <Button onClick={handlePrevPage} disabled={pagination.page === 1}>
+          Previous
+        </Button>
+        <span>Page {pagination.page}</span>
+        <Button
+          onClick={handleNextPage}
+          disabled={
+            !data?.data?.length || data.data.length < pagination.per_page
+          }
+        >
+          Next
+        </Button>
+      </div>
     </div>
   );
 };
 
-export default BranchPage;
+export default BranchesPage;

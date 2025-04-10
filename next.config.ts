@@ -10,6 +10,8 @@ const nextConfig: NextConfig = {
       "media-cdn.tripadvisor.com",
       "placehold.co",
       "fakeimg.pl",
+      "via.placeholder.com",
+      "103.127.139.176",
     ],
   },
 };

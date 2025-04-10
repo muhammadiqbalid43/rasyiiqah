@@ -4,7 +4,7 @@ import { Button } from "../ui/button";
 
 const Hero = () => {
   return (
-    <div className="relative ring-1">
+    <div className="relative">
       <div className="absolute inset-0 z-10 bg-black/60" />
       <div className="relative  h-[400px] ">
         <Image
