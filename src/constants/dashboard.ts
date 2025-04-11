@@ -3,7 +3,6 @@ import {
   CreditCard,
   Home,
   Package,
-  PieChart,
   Settings,
   Users,
 } from "lucide-react";
@@ -26,8 +25,8 @@ export const data = {
       icon: Users,
     },
     {
-      title: "Umroh Package",
-      url: "/dashboard/umroh-packages",
+      title: "Legalitas",
+      url: "/dashboard/legality",
       icon: Package,
     },
     {
@@ -36,15 +35,11 @@ export const data = {
       icon: Calendar,
     },
     {
-      title: "Payments",
-      url: "#",
+      title: "Galeri",
+      url: "/dashboard/gallery",
       icon: CreditCard,
     },
-    {
-      title: "Reports",
-      url: "#",
-      icon: PieChart,
-    },
+
     {
       title: "Settings",
       url: "#",
