@@ -80,7 +80,7 @@ const BranchesPage = () => {
                   {/* ✅ Tambahkan tag img untuk menampilkan gambar */}
                   {branch.image && (
                     <Image
-                      src={`${IMAGE_BASE_URL}/storage/branches/${branch.image}`}
+                      src={`${IMAGE_BASE_URL}/storage/${branch.image}`}
                       alt={`Branch ${branch.name}`}
                       className="object-cover w-10 h-10 rounded-md"
                       width={40}

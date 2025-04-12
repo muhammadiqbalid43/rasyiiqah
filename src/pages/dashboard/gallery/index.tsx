@@ -1,5 +1,6 @@
 import CreateGalleryDialog from "@/components/gallery/create-gallery-dialog";
 import DeleteConfirmationDialog from "@/components/gallery/delete-confirmation-dialog";
+import UpdateGalleryDialog from "@/components/gallery/update-gallery-dialog";
 import { Button } from "@/components/ui/button";
 import {
   Table,
@@ -10,6 +11,7 @@ import {
   TableRow,
 } from "@/components/ui/table";
 import { useGallery } from "@/queries/gallery-queries";
+import { GetGallery } from "@/types/gallery";
 import Image from "next/image";
 import { useState } from "react";
 
@@ -58,11 +60,11 @@ const GalleryPage = () => {
                 )}
               </TableCell>
               <TableCell>
-                {/* <UpdateLegalityDialog id={legality.id}>
+                <UpdateGalleryDialog galleryId={gallery.id}>
                   <Button variant="outline" size="sm">
                     Edit
                   </Button>
-                </UpdateLegalityDialog> */}
+                </UpdateGalleryDialog>
                 <DeleteConfirmationDialog id={gallery.id} title={gallery.title}>
                   <Button variant="destructive" size="sm">
                     Hapus

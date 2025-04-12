@@ -1,19 +1,17 @@
-import { GetLegality } from "./legality";
-
 export interface Gallery {
-  id: string;
+  id: string | number;
   title: string;
-  image: string;
+  image: string | File;
 }
 
 export interface GetGallery {
-  id: string;
+  id: string | number;
   title: string;
-  imageUrl: File;
+  imageUrl: File | string;
 }
 
 export interface GalleryResponse {
-  data: GetLegality[];
+  data: GetGallery[];
   per_page: number;
   page: number;
 }
