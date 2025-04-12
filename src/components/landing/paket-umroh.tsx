@@ -10,6 +10,7 @@ import {
 } from "../ui/card";
 import { MapIcon } from "lucide-react";
 import { Button } from "../ui/button";
+import Link from "next/link";
 
 const PaketUmroh = () => {
   return (
@@ -91,7 +92,9 @@ function PackageCard({ package: pkg }) {
           <p className="text-xs text-muted-foreground">Mulai dari</p>
           <p className="font-bold text-primary">{pkg.price}</p>
         </div>
-        <Button size="sm">Detail</Button>
+        <Link href="/package/1">
+          <Button size="sm">Detail</Button>
+        </Link>
       </CardFooter>
     </Card>
   );

@@ -29,11 +29,7 @@ export const data = {
       url: "/dashboard/legality",
       icon: Package,
     },
-    {
-      title: "Cabang",
-      url: "/dashboard/branch",
-      icon: Calendar,
-    },
+
     {
       title: "Galeri",
       url: "/dashboard/gallery",

@@ -9,16 +9,17 @@ import {
   CardTitle,
 } from "../ui/card";
 import { Badge } from "../ui/badge";
+import Link from "next/link";
 
 const JadwalKeberangkatan = () => {
   return (
-    <div className="bg-gray-50 py-16">
-      <div className="container mx-auto px-4">
+    <div className="py-16 bg-gray-50">
+      <div className="container px-4 mx-auto">
         <div className="mb-10 text-center">
-          <h2 className="mb-2 text-3xl font-bold md:text-4xl tracking-tight ">
+          <h2 className="mb-2 text-3xl font-bold tracking-tight md:text-4xl ">
             Jadwal Keberangkatan Terdekat
           </h2>
-          <p className="mx-auto max-w-2xl text-muted-foreground">
+          <p className="max-w-2xl mx-auto text-muted-foreground">
             {" "}
             Pilih jadwal keberangkatan umroh yang sesuai dengan rencana
             perjalanan Anda
@@ -30,7 +31,7 @@ const JadwalKeberangkatan = () => {
               key={index}
               className="overflow-hidden transition-all hover:shadow-lg"
             >
-              <CardHeader className="bg-primary/5 pb-4">
+              <CardHeader className="pb-4 bg-primary/5">
                 <div className="flex items-center justify-between">
                   <Badge
                     variant={
@@ -46,31 +47,35 @@ const JadwalKeberangkatan = () => {
                 <CardTitle className="mt-2">{schedule.name}</CardTitle>
                 <CardDescription>
                   <div className="flex items-center gap-1 text-primary">
-                    <CalendarIcon className="h-4 w-4" />
+                    <CalendarIcon className="w-4 h-4" />
                     <span>{schedule.date}</span>
                   </div>
                 </CardDescription>
               </CardHeader>
               <CardContent className="pt-4">
-                <div className="mb-4 flex items-center gap-2">
-                  <MapIcon className="h-4 w-4 text-muted-foreground" />
+                <div className="flex items-center gap-2 mb-4">
+                  <MapIcon className="w-4 h-4 text-muted-foreground" />
                   <span className="text-sm">{schedule.route}</span>
                 </div>
                 <div className="flex items-center gap-2">
-                  <UserIcon className="h-4 w-4 text-muted-foreground" />
+                  <UserIcon className="w-4 h-4 text-muted-foreground" />
                   <span className="text-sm">Pembimbing: {schedule.guide}</span>
                 </div>
               </CardContent>
-              <CardFooter className="flex items-center justify-between border-t bg-muted/20 px-6 py-3">
+              <CardFooter className="flex items-center justify-between px-6 py-3 border-t bg-muted/20">
                 <div className="font-bold text-primary">{schedule.price}</div>
-                <Button size="sm">Detail</Button>
+                <Link href="/package/1">
+                  <Button size="sm">Detail</Button>
+                </Link>
               </CardFooter>
             </Card>
           ))}
         </div>
 
         <div className="mt-10 text-center">
-          <Button variant="outline">Lihat Semua Jadwal</Button>
+          <Link href="/package/1">
+            <Button variant="outline">Lihat Semua Jadwal</Button>
+          </Link>
         </div>
       </div>{" "}
     </div>

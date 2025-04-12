@@ -2,7 +2,7 @@ import { Button } from "../ui/button";
 
 const Cta = () => {
   return (
-    <div className="py-16 bg-primary text-primary-foreground">
+    <div className="py-16 bg-primary text-primary-foreground" id="cta">
       <div className="container px-4 mx-auto text-center">
         <h2 className="mb-4 text-3xl font-bold tracking-tight ">
           Siap Untuk Memulai Perjalanan Umroh?

@@ -2,7 +2,7 @@ import { Button } from "../ui/button";
 
 const Gallery = () => {
   return (
-    <div className="py-16">
+    <div className="py-16" id="gallery">
       <div className="container px-4 mx-auto">
         <div className="mb-10 text-center">
           <h2 className="mb-2 text-3xl font-bold tracking-tight sm:text-4xl">

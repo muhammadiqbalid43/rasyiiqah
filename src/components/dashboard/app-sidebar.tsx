@@ -8,7 +8,6 @@ import {
   SidebarMenuButton,
   SidebarMenuItem,
 } from "../ui/sidebar";
-import { ArrowUpCircleIcon } from "lucide-react";
 import NavMain from "./nav-main";
 import { data } from "@/constants/dashboard";
 
@@ -27,8 +26,9 @@ export default function AppSidebar({
               className="data-[slot=sidebar-menu-button]:!p-1.5"
             >
               <a href="#">
-                <ArrowUpCircleIcon className="w-5 h-5" />
-                <span className="text-base font-semibold">Nanami FE</span>
+                <span className="text-base font-semibold">
+                  Rasyiiqah Tour & Travel
+                </span>
               </a>
             </SidebarMenuButton>
           </SidebarMenuItem>

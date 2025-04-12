@@ -23,7 +23,7 @@ const Header = () => {
 
           {/* DESKTOP */}
           <div className="hidden md:flex md:items-center md:space-x-8">
-            <Link href="#">Beranda</Link>
+            <Link href="/">Beranda</Link>
 
             {/* Services Dropdown */}
             <div className="relative">
@@ -69,25 +69,25 @@ const Header = () => {
               )}
             </div>
             <Link
-              href="#"
+              href="#cta"
               className="px-3 py-2 text-sm font-medium text-gray-700 rounded-md hover:text-gray-900"
             >
               Hubungi Kami
             </Link>
             <Link
-              href="#"
+              href="#tentang-kami"
               className="px-3 py-2 text-sm font-medium text-gray-700 rounded-md hover:text-gray-900"
             >
               Tentang Kami
             </Link>
             <Link
-              href="#"
+              href="#testimoni"
               className="px-3 py-2 text-sm font-medium text-gray-700 rounded-md hover:text-gray-900"
             >
               Testimoni
             </Link>
             <Link
-              href="#"
+              href="#gallery"
               className="px-3 py-2 text-sm font-medium text-gray-700 rounded-md hover:text-gray-900"
             >
               Gallery

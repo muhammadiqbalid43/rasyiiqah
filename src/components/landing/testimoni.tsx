@@ -3,7 +3,7 @@ import { Card, CardContent } from "../ui/card";
 
 const Testimoni = () => {
   return (
-    <div className="py-16 bg-gray-50">
+    <div className="py-16 bg-gray-50" id="testimoni">
       <div className="container px-4 mx-auto">
         <div className="mb-10 text-center">
           <h2 className="mb-2 text-3xl font-bold tracking-tight">Testimoni</h2>
