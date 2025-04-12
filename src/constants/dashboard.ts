@@ -41,8 +41,8 @@ export const data = {
     },
 
     {
-      title: "Settings",
-      url: "#",
+      title: "Testimoni",
+      url: "/dashboard/testimony",
       icon: Settings,
     },
   ],
