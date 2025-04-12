@@ -59,11 +59,11 @@ const LegalityPage = () => {
                 )}
               </TableCell>
               <TableCell>
-                <UpdateLegalityDialog id={legality.id}>
+                {/* <UpdateLegalityDialog id={legality.id}>
                   <Button variant="outline" size="sm">
                     Edit
                   </Button>
-                </UpdateLegalityDialog>
+                </UpdateLegalityDialog> */}
                 <DeleteConfirmationDialog
                   id={legality.id}
                   title={legality.title}

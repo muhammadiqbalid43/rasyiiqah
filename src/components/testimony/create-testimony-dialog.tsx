@@ -129,7 +129,7 @@ const CreateTestimony = () => {
   return (
     <Dialog open={open} onOpenChange={setOpen}>
       <DialogTrigger asChild>
-        <Button variant="outline">Create Testimony</Button>
+        <Button variant="outline">Tambah Testimoni</Button>
       </DialogTrigger>
       <DialogContent className="sm:max-w-[425px]">
         <DialogHeader>

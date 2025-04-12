@@ -11,7 +11,6 @@ import {
   TableRow,
 } from "@/components/ui/table";
 import { useGallery } from "@/queries/gallery-queries";
-import { GetGallery } from "@/types/gallery";
 import Image from "next/image";
 import { useState } from "react";
 
@@ -59,7 +58,7 @@ const GalleryPage = () => {
                   />
                 )}
               </TableCell>
-              <TableCell>
+              <TableCell className="flex gap-2">
                 <UpdateGalleryDialog galleryId={gallery.id}>
                   <Button variant="outline" size="sm">
                     Edit

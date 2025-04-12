@@ -1,10 +1,7 @@
 import Booking from "@/components/dashboard/booking";
 import SectionCards from "@/components/dashboard/section-cards";
 
-import { usePathname } from "next/navigation";
-
-const DashboardPage = ({}) => {
-  const pathname = usePathname();
+const DashboardPage = () => {
   return (
     <div>
       <SectionCards />

@@ -20,9 +20,9 @@ import {
 
 const Booking = () => {
   return (
-    <div className="px-6 mt-4">
+    <div className="mt-4 ">
       <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-7">
-        <Card className="col-span-4">
+        <Card className="col-span-4 w-[330px] md:w-full">
           <CardHeader>
             <CardTitle>Recent Bookings</CardTitle>
           </CardHeader>
@@ -78,7 +78,7 @@ const Booking = () => {
             </Button>
           </CardFooter>
         </Card>
-        <Card className="col-span-3">
+        <Card className="col-span-3 w-[330px] md:w-full">
           <CardHeader>
             <CardTitle>Popular Packages</CardTitle>
             <CardDescription>
