@@ -69,7 +69,7 @@ const TestimoniesPage = () => {
                   <TableCell>
                     <DeleteConfirmationDialog
                       id={testimony.id}
-                      title={testimony.id}
+                      title={testimony.url}
                     >
                       <Button variant="destructive" size="sm">
                         Hapus

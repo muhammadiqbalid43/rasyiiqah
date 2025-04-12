@@ -1,11 +1,4 @@
-import {
-  Calendar,
-  CreditCard,
-  Home,
-  Package,
-  Settings,
-  Users,
-} from "lucide-react";
+import { CreditCard, Home, Package, Settings, Users } from "lucide-react";
 
 export const data = {
   user: {

@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { Badge } from "../ui/badge";
 import {
   Card,
@@ -38,7 +37,17 @@ const PaketUmroh = () => {
 
 export default PaketUmroh;
 
-function PackageCard({ package: pkg }) {
+type Package = {
+  name: string;
+  type: string;
+  duration: number;
+  hotel: string;
+  image: string;
+  price: string;
+  features: string[];
+};
+
+function PackageCard({ package: pkg }: { package: Package }) {
   return (
     <Card className="overflow-hidden transition-all hover:shadow-lg">
       <div className="overflow-hidden aspect-video">

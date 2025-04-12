@@ -11,6 +11,7 @@ import {
   TableRow,
 } from "@/components/ui/table";
 import { useGallery } from "@/queries/gallery-queries";
+import { GalleryResponse } from "@/types/gallery";
 import Image from "next/image";
 import { useState } from "react";
 
@@ -23,7 +24,14 @@ const GalleryPage = () => {
   if (isLoading) return <div>Loading...</div>;
   if (isError) return <div>Error fetching data</div>;
 
-  const isLastPage = (data?.data?.length ?? 0) < 10;
+  function isGalleryResponse(data: unknown): data is GalleryResponse {
+    return typeof data === "object" && data !== null && "data" in data;
+  }
+
+  const isLastPage = isGalleryResponse(data)
+    ? (data.data.length ?? 0) < 10
+    : true;
+
   return (
     <div className="container py-8 mx-auto">
       <div className="flex items-center justify-between mb-6">

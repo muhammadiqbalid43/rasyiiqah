@@ -1,11 +1,11 @@
 export interface Gallery {
-  id: string | number;
+  id: number;
   title: string;
   image: string | File;
 }
 
 export interface GetGallery {
-  id: string | number;
+  id: number;
   title: string;
   imageUrl: File | string;
 }

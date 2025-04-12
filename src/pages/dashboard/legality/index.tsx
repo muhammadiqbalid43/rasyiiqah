@@ -1,6 +1,5 @@
 import CreateLegalityDialog from "@/components/legality/create-legality-dialog";
 import DeleteConfirmationDialog from "@/components/legality/delete-confirmation-dialog";
-import UpdateLegalityDialog from "@/components/legality/update-legality-dialog";
 import { Button } from "@/components/ui/button";
 import {
   Table,

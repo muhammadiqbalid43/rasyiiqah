@@ -87,13 +87,6 @@ const UpdateGalleryDialog = ({
     [form]
   );
 
-  const handleDialogChange = (open: boolean) => {
-    setOpen(open);
-    if (!open && galleryItem) {
-      setPreviewUrl(galleryItem.data.image_url);
-    }
-  };
-
   async function onSubmit(values: GalleryFormValues) {
     await updateGallery({ id: galleryId, data: values });
     setOpen(false);
@@ -134,7 +127,7 @@ const UpdateGalleryDialog = ({
               <FormField
                 control={form.control}
                 name="image"
-                render={({ field }) => (
+                render={({}) => (
                   <FormItem>
                     <FormLabel>Image</FormLabel>
                     <div className="space-y-2">

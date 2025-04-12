@@ -14,6 +14,7 @@ import { Button } from "../ui/button";
 interface DeleteConfirmationDialogProps {
   id: number;
   children: React.ReactNode;
+  title: string;
 }
 
 const DeleteConfirmationDialog = ({

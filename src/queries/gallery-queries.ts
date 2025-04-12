@@ -5,7 +5,7 @@ import {
   getGalleryById,
   updateGallery,
 } from "@/services/gallery-service";
-import { GalleryResponse, GetGallery } from "@/types/gallery";
+import { GalleryResponse } from "@/types/gallery";
 import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
 import { toast } from "@/hooks/use-toast";
 
@@ -26,7 +26,7 @@ export const useCreateGallery = () => {
 };
 
 export const useGallery = (page: number = 1, per_page: number = 10) => {
-  return useQuery<GalleryResponse | GetGallery>({
+  return useQuery<GalleryResponse>({
     queryKey: ["galleries", { page, per_page }],
     queryFn: () => getGalleries(page),
   });

@@ -110,18 +110,24 @@ const CreateTestimony = () => {
           form.reset();
           setOpen(false);
         },
-        onError: (error: any) => {
+        onError: (error: unknown) => {
+          const message =
+            error instanceof Error
+              ? error.message
+              : "Failed to create testimony";
           toast({
             title: "Error",
-            description: error.message || "Failed to create testimony",
+            description: message,
             variant: "destructive",
           });
         },
       });
-    } catch (error) {
+    } catch (error: unknown) {
+      const message =
+        error instanceof Error ? error.message : "Something went wrong.";
       toast({
         title: "Error",
-        description: "An unexpected error occurred",
+        description: message,
         variant: "destructive",
       });
     }
@@ -169,6 +175,7 @@ const CreateTestimony = () => {
               <FormField
                 control={form.control}
                 name="file"
+                // eslint-disable-next-line @typescript-eslint/no-unused-vars
                 render={({ field: { value, onChange, ...field } }) => (
                   <FormItem>
                     <FormLabel>Image File</FormLabel>

@@ -57,7 +57,7 @@ const BranchCreateDialog = () => {
     },
   });
 
-  const fileRef = form.register("image");
+  // const fileRef = form.register("image");
 
   async function onSubmit(values: z.infer<typeof formSchema>) {
     try {
@@ -84,10 +84,12 @@ const BranchCreateDialog = () => {
       });
       setOpen(false);
       form.reset();
-    } catch (error) {
+    } catch (error: unknown) {
+      const message =
+        error instanceof Error ? error.message : "Something went wrong.";
       toast({
         title: "Error",
-        description: "Failed to create branch.",
+        description: message,
         variant: "destructive",
       });
     } finally {
