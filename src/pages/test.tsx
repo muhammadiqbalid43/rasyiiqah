@@ -1,5 +1,8 @@
+import Certificate from "@/components/landing/certificate";
 import Footer from "@/components/landing/footer";
 import Header from "@/components/landing/header";
+import PaketPerjalananUmroh from "@/components/landing/paket-perjalanan-umroh";
+import TourLeader from "@/components/landing/tour-leader";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Check, MapPin, Star, Users } from "lucide-react";
@@ -145,6 +148,15 @@ const TestPage = () => {
           </div>
         </div>
       </section>
+
+      {/* Certificate */}
+      <Certificate />
+
+      {/* Tour Leader */}
+      <TourLeader />
+
+      {/* Paket Perjalanan Umroh */}
+      <PaketPerjalananUmroh />
 
       {/* CTA Section */}
       <section className="py-16 text-center">
