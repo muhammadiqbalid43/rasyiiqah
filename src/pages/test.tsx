@@ -1,8 +1,5 @@
-import Certificate from "@/components/landing/certificate";
 import Footer from "@/components/landing/footer";
 import Header from "@/components/landing/header";
-import PaketPerjalananUmroh from "@/components/landing/paket-perjalanan-umroh";
-import TourLeader from "@/components/landing/tour-leader";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import {
@@ -89,7 +86,7 @@ const TestPage = () => {
                     <Check className="w-6 h-6" />
                   </div>
                 </div>
-                <h3 className="mb-3 text-xl font-semibold text-center">
+                <h3 className="mb-3 text-xl font-semibold text-center text-[#ff7200]">
                   Berizin lengkap
                 </h3>
                 <div className="flex justify-center">
@@ -122,13 +119,36 @@ const TestPage = () => {
 
             <Card className="bg-white border-green-100 shadow-md">
               <CardContent className="p-6">
-                <div className="flex items-center justify-center w-12 h-12 mb-4 text-green-600 bg-green-100 rounded-full">
-                  <MapPin className="w-6 h-6" />
+                <div className="flex justify-center">
+                  <div className="flex items-center justify-center w-12 h-12 mb-4 text-green-600 bg-green-100 rounded-full">
+                    <MapPin className="w-6 h-6" />
+                  </div>
                 </div>
-                <h3 className="mb-3 text-xl font-semibold">
-                  Informasi perusaha mudah di akses
+                <h3 className="mb-3 text-xl font-semibold text-center text-[#ff7200]">
+                  Informasi perusahaan mudah di akses
                 </h3>
-                <p className="text-gray-600">
+                <div className="flex justify-center">
+                  <Carousel className="w-[270px] max-w-xs">
+                    <CarouselContent>
+                      {Array.from({ length: 5 }).map((_, index) => (
+                        <CarouselItem key={index}>
+                          <div className="p-1">
+                            <Card>
+                              <CardContent className="flex items-center justify-center p-6 aspect-square">
+                                <span className="text-4xl font-semibold">
+                                  {index + 1}
+                                </span>
+                              </CardContent>
+                            </Card>
+                          </div>
+                        </CarouselItem>
+                      ))}
+                    </CarouselContent>
+                    <CarouselPrevious />
+                    <CarouselNext />
+                  </Carousel>
+                </div>
+                <p className="text-center text-gray-600">
                   Website resmi dan kantor fisik yang dapat dikunjungi langsung.
                 </p>
               </CardContent>
@@ -136,27 +156,55 @@ const TestPage = () => {
 
             <Card className="bg-white border-green-100 shadow-md">
               <CardContent className="p-6">
-                <div className="flex items-center justify-center w-12 h-12 mb-4 text-green-600 bg-green-100 rounded-full">
-                  <Check className="w-6 h-6" />
+                <div className="flex justify-center">
+                  <div className="flex items-center justify-center w-12 h-12 mb-4 text-green-600 bg-green-100 rounded-full">
+                    <Check className="w-6 h-6" />
+                  </div>
                 </div>
-                <h3 className="mb-3 text-xl font-semibold">
+                <h3 className="mb-3 text-xl font-semibold text-center text-[#ff7200]">
                   Informasi Keberangkatan pasti
                 </h3>
-                <p className="text-gray-600">
+                <div className="flex justify-center">
+                  <Carousel className="w-[270px] max-w-xs">
+                    <CarouselContent>
+                      {Array.from({ length: 5 }).map((_, index) => (
+                        <CarouselItem key={index}>
+                          <div className="p-1">
+                            <Card>
+                              <CardContent className="flex items-center justify-center p-6 aspect-square">
+                                <span className="text-4xl font-semibold">
+                                  {index + 1}
+                                </span>
+                              </CardContent>
+                            </Card>
+                          </div>
+                        </CarouselItem>
+                      ))}
+                    </CarouselContent>
+                    <CarouselPrevious />
+                    <CarouselNext />
+                  </Carousel>
+                </div>
+                <p className="mt-2 text-center text-gray-600 ">
                   Jadwal keberangkatan yang jelas dan terjamin.
                 </p>
               </CardContent>
             </Card>
 
-            <Card className="bg-white border-green-100 shadow-md">
+            <Card className="bg-white border-green-100 shadow-md ">
               <CardContent className="p-6">
-                <div className="flex items-center justify-center w-12 h-12 mb-4 text-green-600 bg-green-100 rounded-full">
-                  <Star className="w-6 h-6" />
+                <div className="flex justify-center">
+                  <div className="flex items-center justify-center w-12 h-12 mb-4 text-green-600 bg-green-100 rounded-full">
+                    <Star className="w-6 h-6" />
+                  </div>
                 </div>
-                <h3 className="mb-3 text-xl font-semibold">
+                <h3 className="mb-3 text-xl font-semibold text-center text-[#ff7200]">
                   Fasilitas lengkap
                 </h3>
-                <p className="text-gray-600">
+                <div className="flex justify-center">
+                  <div className="w-[200px] h-[200px] bg-gray-200 rounded"></div>
+                </div>
+                <p className="mt-2 text-center text-gray-600">
                   Akomodasi, transportasi, dan layanan terbaik selama perjalanan
                   umroh.
                 </p>
@@ -165,13 +213,18 @@ const TestPage = () => {
 
             <Card className="bg-white border-green-100 shadow-md">
               <CardContent className="p-6">
-                <div className="flex items-center justify-center w-12 h-12 mb-4 text-green-600 bg-green-100 rounded-full">
-                  <Users className="w-6 h-6" />
+                <div className="flex justify-center">
+                  <div className="flex items-center justify-center w-12 h-12 mb-4 text-green-600 bg-green-100 rounded-full">
+                    <Users className="w-6 h-6" />
+                  </div>
                 </div>
-                <h3 className="mb-3 text-xl font-semibold">
+                <h3 className="mb-3 text-xl font-semibold text-center text-[#ff7200]">
                   Muttawatir Ulama Bengkulu
                 </h3>
-                <p className="text-gray-600">
+                <div className="flex justify-center">
+                  <div className="w-[200px] h-[200px] bg-gray-200 rounded"></div>
+                </div>
+                <p className="mt-2 text-center text-gray-600">
                   Didampingi oleh ulama terpercaya dari Bengkulu sebagai
                   pembimbing ibadah.
                 </p>
@@ -180,15 +233,6 @@ const TestPage = () => {
           </div>
         </div>
       </section>
-
-      {/* Certificate */}
-      <Certificate />
-
-      {/* Tour Leader */}
-      <TourLeader />
-
-      {/* Paket Perjalanan Umroh */}
-      <PaketPerjalananUmroh />
 
       {/* CTA Section */}
       <section className="py-16 text-center">
