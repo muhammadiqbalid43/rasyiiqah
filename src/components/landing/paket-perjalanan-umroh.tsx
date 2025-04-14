@@ -23,7 +23,7 @@ const PaketPerjalananUmroh = () => {
               opts={{
                 align: "start",
               }}
-              className="w-[600px]  "
+              className="w-[200px] md:w-[600px]"
             >
               <CarouselContent>
                 {Array.from({ length: 8 }).map((_, index) => (
