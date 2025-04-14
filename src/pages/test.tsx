@@ -5,6 +5,13 @@ import PaketPerjalananUmroh from "@/components/landing/paket-perjalanan-umroh";
 import TourLeader from "@/components/landing/tour-leader";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
 import { Check, MapPin, Star, Users } from "lucide-react";
 import Image from "next/image";
 
@@ -77,11 +84,36 @@ const TestPage = () => {
           <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
             <Card className="bg-white border-green-100 shadow-md">
               <CardContent className="p-6">
-                <div className="flex items-center justify-center w-12 h-12 mb-4 text-green-600 bg-green-100 rounded-full">
-                  <Check className="w-6 h-6" />
+                <div className="flex justify-center">
+                  <div className="flex items-center justify-center w-12 h-12 mb-4 text-green-600 bg-green-100 rounded-full">
+                    <Check className="w-6 h-6" />
+                  </div>
                 </div>
-                <h3 className="mb-3 text-xl font-semibold">Berizin lengkap</h3>
-                <p className="text-gray-600">
+                <h3 className="mb-3 text-xl font-semibold text-center">
+                  Berizin lengkap
+                </h3>
+                <div className="flex justify-center">
+                  <Carousel className="w-[270px] max-w-xs">
+                    <CarouselContent>
+                      {Array.from({ length: 5 }).map((_, index) => (
+                        <CarouselItem key={index}>
+                          <div className="p-1">
+                            <Card>
+                              <CardContent className="flex items-center justify-center p-6 aspect-square">
+                                <span className="text-4xl font-semibold">
+                                  {index + 1}
+                                </span>
+                              </CardContent>
+                            </Card>
+                          </div>
+                        </CarouselItem>
+                      ))}
+                    </CarouselContent>
+                    <CarouselPrevious />
+                    <CarouselNext />
+                  </Carousel>
+                </div>
+                <p className="mt-2 text-center text-gray-600">
                   Memiliki izin resmi dari Kementerian Agama dan legalitas yang
                   lengkap.
                 </p>
