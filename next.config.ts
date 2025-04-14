@@ -12,6 +12,7 @@ const nextConfig: NextConfig = {
       "fakeimg.pl",
       "via.placeholder.com",
       "103.127.139.176",
+      "www.dwinstravel.com",
     ],
   },
 };

@@ -3,6 +3,7 @@ import Header from "@/components/landing/header";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Check, MapPin, Star, Users } from "lucide-react";
+import Image from "next/image";
 
 const TestPage = () => {
   return (
@@ -11,22 +12,22 @@ const TestPage = () => {
       {/* Hero Section */}
       <section className="relative py-20 text-center bg-gradient-to-b from-green-50 to-white">
         <div className="container px-4 mx-auto">
-          <h1 className="mb-6 text-3xl font-bold leading-tight text-green-900 md:text-4xl lg:text-5xl">
+          <h1 className="mb-6 text-3xl font-bold leading-tight text-[#1d6b05] md:text-4xl lg:text-5xl">
             Jangan sampai, GAGAL UMROH hanya karena bingung pilih Travel Umroh
             yang Terpecaya
           </h1>
-          <p className="mb-8 text-xl text-green-800">
+          <p className="mb-8 text-xl text-[#1d6b05]">
             Padahal Anda Sudah Rindu Kabbah.
           </p>
           <div className="max-w-3xl mx-auto">
-            {/* <Image
-              src="/placeholder.svg?height=400&width=800"
+            <Image
+              src="https://www.dwinstravel.com/wp-content/uploads/2024/07/Header-Travel-Umroh-Sunnah-Dwins-Travel.webp"
               alt="Kaaba in Mecca"
               width={800}
               height={400}
               className="mx-auto rounded-lg shadow-lg"
-            /> */}
-            <div className="h-[400px] w-[500px] md:w-[800px] bg-gray-400"></div>
+            />
+            {/* <div className="h-[400px] w-[500px] md:w-[800px] bg-gray-400"></div> */}
           </div>
         </div>
       </section>
@@ -34,7 +35,7 @@ const TestPage = () => {
       {/* How to Choose Section */}
       <section className="py-16">
         <div className="container px-4 mx-auto">
-          <h2 className="mb-12 text-3xl font-bold text-center text-green-900">
+          <h2 className="mb-12 text-3xl font-bold text-center text-[#ff7200]">
             Sini saya tunjukin cara pilih Travel umroh
           </h2>
           <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
@@ -47,7 +48,7 @@ const TestPage = () => {
             ].map((item, index) => (
               <CardContent key={index} className="border-green-100 shadow-md">
                 <CardContent className="flex items-start gap-4 p-6">
-                  <div className="flex items-center justify-center w-10 h-10 text-green-600 bg-green-100 rounded-full shrink-0">
+                  <div className="flex items-center justify-center w-10 h-10 text-[#1d6b05] bg-green-100 rounded-full shrink-0">
                     <Check className="w-6 h-6" />
                   </div>
                   <p className="text-lg font-medium">{item}</p>
@@ -56,7 +57,7 @@ const TestPage = () => {
             ))}
           </div>
           <div className="mt-12 text-center">
-            <h3 className="mb-6 text-2xl font-semibold text-green-800">
+            <h3 className="mb-6 text-2xl font-semibold text-[#ff7200]">
               Masih Bingung?
             </h3>
             <p className="mb-8 text-xl">Sini Saya tunjukin</p>
@@ -67,7 +68,7 @@ const TestPage = () => {
       {/* Why Choose Us Section */}
       <section className="py-16 bg-green-50">
         <div className="container px-4 mx-auto">
-          <h2 className="mb-12 text-3xl font-bold text-center text-green-900">
+          <h2 className="mb-12 text-3xl font-bold text-center text-[#1d6b05]">
             Travel Umroh Terpecaya Di Provinsi bengkulu, Kenapa??
           </h2>
           <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
@@ -148,14 +149,14 @@ const TestPage = () => {
       {/* CTA Section */}
       <section className="py-16 text-center">
         <div className="container px-4 mx-auto">
-          <h2 className="mb-6 text-3xl font-bold text-green-900">
+          <h2 className="mb-6 text-3xl font-bold text-[#ff7200]">
             Jangan ragu, segera capai impian Umroh anda
           </h2>
-          <p className="mb-8 text-xl font-semibold text-green-700">
+          <p className="mb-8 text-xl font-semibold text-[#ff7200]">
             Promo khusus 10 pendaftar pertama
           </p>
           <div className="flex flex-col items-center justify-center gap-4 sm:flex-row">
-            <Button className="px-8 py-6 text-lg bg-green-600 hover:bg-green-700">
+            <Button className="px-8 py-6 text-lg bg-[#1d6b05] hover:bg-green-700">
               Tanya admin
             </Button>
             <Button
@@ -171,7 +172,7 @@ const TestPage = () => {
       {/* Testimonials Section */}
       <section className="py-16 bg-green-50">
         <div className="container px-4 mx-auto">
-          <h2 className="mb-12 text-3xl font-bold text-center text-green-900">
+          <h2 className="mb-12 text-3xl font-bold text-center text-[#1d6b05]">
             Ini cerita mereka
           </h2>
           <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
@@ -186,7 +187,7 @@ const TestPage = () => {
                       height={100}
                       className="rounded-full"
                     /> */}
-                    <div className="h-[100px] w-[100px] bg-gray-400"></div>
+                    <div className="h-[100px] w-[100px] rounded bg-gray-400"></div>
                   </div>
                   <div className="flex justify-center mb-3">
                     {[1, 2, 3, 4, 5].map((star) => (
@@ -209,7 +210,7 @@ const TestPage = () => {
             ))}
           </div>
           <div className="mt-12 text-center">
-            <h3 className="mb-6 text-2xl font-semibold text-green-800">
+            <h3 className="mb-6 text-2xl font-semibold text-[#1d6b05]">
               Jadikan cerita anda
             </h3>
             <div className="flex flex-col items-center justify-center gap-4 sm:flex-row">
