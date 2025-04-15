@@ -41,8 +41,12 @@ const formSchema = z.object({
     .optional(),
 });
 
-const BranchCreateDialog = () => {
-  const [open, setOpen] = useState(false);
+type Props = {
+  open: boolean;
+  onClose: () => void;
+};
+
+const BranchCreateDialog = ({ open, onClose }: Props) => {
   const [isLoading, setIsLoading] = useState(false);
 
   const { mutateAsync: createBranch } = useCreateBranch();
@@ -71,18 +75,16 @@ const BranchCreateDialog = () => {
 
       if (values.image instanceof File) {
         // ✅ Pastikan benar-benar File
-        formData.append("imageUrl", values.image, values.image.name); // Tambahkan filename
+        formData.append("image", values.image, values.image.name); // Tambahkan filename
       }
 
-      console.log("File to upload:", values.image);
-      console.log("Is File instance?", values.image instanceof File);
       await createBranch(formData);
 
       toast({
         title: "Success",
         description: "Branch created successfully.",
       });
-      setOpen(false);
+      onClose();
       form.reset();
     } catch (error: unknown) {
       const message =
@@ -98,11 +100,7 @@ const BranchCreateDialog = () => {
   }
 
   return (
-    <Dialog open={open} onOpenChange={setOpen}>
-      <DialogTrigger asChild>
-        <Button variant="outline">Create Branch</Button>
-      </DialogTrigger>
-
+    <Dialog open={open} onOpenChange={onClose}>
       <DialogContent className="sm:max-w-[425px]">
         <DialogHeader>
           <DialogTitle>Create New Branch</DialogTitle>

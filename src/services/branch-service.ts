@@ -1,18 +1,32 @@
 import { PaginationParams } from "@/types/branch";
-import axios from "axios";
-
-const API_BASE_URL = process.env.NEXT_PUBLIC_API_BASE_URL;
+import { http } from "@/services/http";
 
 export const getBranches = async (params?: PaginationParams) => {
-  const response = await axios.get(`${API_BASE_URL}/branches`, { params });
+  const response = await http.get("branches", { params });
   return response.data;
 };
 
 export const createBranch = async (formData: FormData) => {
-  const response = await axios.post(`${API_BASE_URL}/branches`, formData, {
+  const response = await http.post("branches", formData, {
     headers: {
       "Content-Type": "multipart/form-data",
     },
   });
+  return response.data;
+};
+
+export const updateBranch = async (formData: FormData) => {
+  formData.append("_method", "PUT");
+
+  const response = await http.post(`branches/${formData.get("id")}`, formData, {
+    headers: {
+      "Content-Type": "multipart/form-data",
+    },
+  });
+  return response.data;
+};
+
+export const deleteBranch = async (id: number) => {
+  const response = await http.delete(`branches/${id}`);
   return response.data;
 };

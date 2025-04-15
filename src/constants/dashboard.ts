@@ -1,4 +1,12 @@
-import { CreditCard, Home, Package, Settings, Users } from "lucide-react";
+import {
+  CreditCard,
+  GitBranchIcon,
+  Home,
+  Package,
+  PackageIcon,
+  Settings,
+  Users,
+} from "lucide-react";
 
 export const data = {
   user: {
@@ -11,6 +19,16 @@ export const data = {
       title: "Dashboard",
       url: "/dashboard",
       icon: Home,
+    },
+    {
+      title: "Paket",
+      url: "/dashboard/package",
+      icon: PackageIcon,
+    },
+    {
+      title: "Cabang",
+      url: "/dashboard/branch",
+      icon: GitBranchIcon,
     },
     {
       title: "User Management",
