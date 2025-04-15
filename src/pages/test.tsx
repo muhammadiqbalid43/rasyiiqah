@@ -155,7 +155,7 @@ const TestPage = () => {
       {/* Why Choose Us Section */}
       <section className="py-16 bg-green-50">
         <div className="container px-4 mx-auto">
-          <h2 className="mb-12 text-3xl font-bold text-center text-[#1d6b05]">
+          <h2 className="mb-12 text-3xl font-bold text-center text-[#ff7200]  ">
             Travel Umroh Terpecaya Di Provinsi bengkulu, Kenapa??
           </h2>
           <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
@@ -340,7 +340,7 @@ const TestPage = () => {
       {/* Testimonials Section */}
       <section className="py-16 bg-green-50">
         <div className="container px-4 mx-auto">
-          <h2 className="mb-12 text-3xl font-bold text-center text-[#1d6b05]">
+          <h2 className="mb-12 text-3xl font-bold text-center text-[#ff7200]">
             Ini cerita mereka
           </h2>
           <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
@@ -378,7 +378,7 @@ const TestPage = () => {
             ))}
           </div>
           <div className="mt-12 text-center">
-            <h3 className="mb-6 text-2xl font-semibold text-[#1d6b05]">
+            <h3 className="mb-6 text-2xl font-semibold text-[#ff7200]">
               Jadikan cerita anda
             </h3>
             <div className="flex flex-col items-center justify-center gap-4 sm:flex-row">
