@@ -45,7 +45,7 @@ const TestPage = () => {
           <h2 className="mb-12 text-3xl font-bold text-center text-[#ff7200]">
             Sini saya tunjukin cara pilih Travel umroh
           </h2>
-          <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+          {/* <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
             {[
               "Pastikan informasi travel mudah di akses",
               "Pastikan izin travel bisa di akses",
@@ -53,7 +53,10 @@ const TestPage = () => {
               "Pastikan pembimbing umroh anda kenal",
               "Pastikan fasilitas nya lengkap",
             ].map((item, index) => (
-              <CardContent key={index} className="border-green-100 shadow-md">
+              <CardContent
+                key={index}
+                className="border-2 border-orange-500 rounded shadow-md"
+              >
                 <CardContent className="flex items-start gap-4 p-6">
                   <div className="flex items-center justify-center w-10 h-10 text-[#1d6b05] bg-green-100 rounded-full shrink-0">
                     <Check className="w-6 h-6" />
@@ -62,12 +65,89 @@ const TestPage = () => {
                 </CardContent>
               </CardContent>
             ))}
+          </div> */}
+          <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+            <Card className="bg-white border-2 border-orange-500 shadow-md">
+              <CardContent className="p-6">
+                <div className="flex justify-center">
+                  <div className="flex items-center justify-center w-12 h-12 mb-4 text-green-600 bg-green-100 rounded-full">
+                    <Check className="w-6 h-6" />
+                  </div>
+                </div>
+                <h3 className="mb-3 text-xl font-semibold text-center text-[#ff7200]">
+                  Pastikan informasi travel mudah di akses
+                </h3>
+              </CardContent>
+            </Card>
+
+            <Card className="bg-white border-2 border-orange-500 shadow-md">
+              <CardContent className="p-6">
+                <div className="flex justify-center">
+                  <div className="flex items-center justify-center w-12 h-12 mb-4 text-green-600 bg-green-100 rounded-full">
+                    <MapPin className="w-6 h-6" />
+                  </div>
+                </div>
+                <h3 className="mb-3 text-xl font-semibold text-center text-[#ff7200]">
+                  Pastikan izin travel bisa di akses
+                </h3>
+              </CardContent>
+            </Card>
+
+            <Card className="bg-white border-2 border-orange-500 shadow-md">
+              <CardContent className="p-6">
+                <div className="flex justify-center">
+                  <div className="flex items-center justify-center w-12 h-12 mb-4 text-green-600 bg-green-100 rounded-full">
+                    <Check className="w-6 h-6" />
+                  </div>
+                </div>
+                <h3 className="mb-3 text-xl font-semibold text-center text-[#ff7200]">
+                  Pastikan informasi keberangkatan
+                </h3>
+              </CardContent>
+            </Card>
+
+            <Card className="bg-white border-2 border-orange-500 shadow-md ">
+              <CardContent className="p-6">
+                <div className="flex justify-center">
+                  <div className="flex items-center justify-center w-12 h-12 mb-4 text-green-600 bg-green-100 rounded-full">
+                    <Star className="w-6 h-6" />
+                  </div>
+                </div>
+                <h3 className="mb-3 text-xl font-semibold text-center text-[#ff7200]">
+                  Pastikan pembimbing umroh anda kenal
+                </h3>
+              </CardContent>
+            </Card>
+
+            <Card className="bg-white border-2 border-orange-500 shadow-md">
+              <CardContent className="p-6">
+                <div className="flex justify-center">
+                  <div className="flex items-center justify-center w-12 h-12 mb-4 text-green-600 bg-green-100 rounded-full">
+                    <Users className="w-6 h-6" />
+                  </div>
+                </div>
+                <h3 className="mb-3 text-xl font-semibold text-center text-[#ff7200]">
+                  Pastikan fasilitas nya lengkap
+                </h3>
+              </CardContent>
+            </Card>
           </div>
           <div className="mt-12 text-center">
             <h3 className="mb-6 text-2xl font-semibold text-[#ff7200]">
               Masih Bingung?
             </h3>
             <p className="mb-8 text-xl">Sini Saya tunjukin</p>
+            <div className="flex flex-col justify-center">
+              <div className="flex justify-center">
+                <Image
+                  src="/logo-travel.jpg"
+                  width={150}
+                  height={150}
+                  alt="logo"
+                />
+              </div>
+              <p className="text-[#ff7200]">Rasyiiqah Tour Dan Travel</p>
+            </div>
           </div>
         </div>
       </section>
