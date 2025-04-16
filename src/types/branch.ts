@@ -1,10 +1,10 @@
 export interface Branch {
   id?: number;
   name: string;
-  image?: string;
+  imageUrl?: string;
   phone: string;
   address: string;
-  map_url: string;
+  mapUrl: string;
 }
 
 export interface PaginationParams {
