@@ -22,8 +22,10 @@ const Header = () => {
           </div>
 
           {/* DESKTOP */}
-          <div className="hidden md:flex md:items-center md:space-x-8">
-            <Link href="/">Beranda</Link>
+          <div className="hidden md:flex md:items-center md:space-x-4">
+            <Link href="/" className="text-sm">
+              Home
+            </Link>
 
             {/* Services Dropdown */}
             <div className="relative">
@@ -31,7 +33,7 @@ const Header = () => {
                 onClick={toggleServices}
                 className="flex items-center gap-1 px-3 py-2 text-sm font-medium text-gray-700 rounded-md hover:text-gray-900"
               >
-                Layanan Kami
+                Paket
                 <ChevronDown
                   className={cn(
                     "h-4 w-4 transition-transform",
@@ -62,7 +64,7 @@ const Header = () => {
                       className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
                       onClick={() => setIsServicesOpen(false)}
                     >
-                      Visa
+                      Paket Tour
                     </Link>
                   </div>
                 </div>
@@ -70,27 +72,21 @@ const Header = () => {
             </div>
             <Link
               href="#cta"
-              className="px-3 py-2 text-sm font-medium text-gray-700 rounded-md hover:text-gray-900"
+              className="text-sm font-medium text-gray-700 rounded-md hover:text-gray-900"
             >
-              Hubungi Kami
+              Blog
             </Link>
             <Link
               href="#tentang-kami"
-              className="px-3 py-2 text-sm font-medium text-gray-700 rounded-md hover:text-gray-900"
+              className="text-sm font-medium text-gray-700 rounded-md hover:text-gray-900"
             >
-              Tentang Kami
+              Tentang
             </Link>
             <Link
               href="#testimoni"
-              className="px-3 py-2 text-sm font-medium text-gray-700 rounded-md hover:text-gray-900"
+              className="text-sm font-medium text-gray-700 rounded-md hover:text-gray-900"
             >
-              Testimoni
-            </Link>
-            <Link
-              href="#gallery"
-              className="px-3 py-2 text-sm font-medium text-gray-700 rounded-md hover:text-gray-900"
-            >
-              Gallery
+              Cabang
             </Link>
           </div>
 
@@ -121,7 +117,7 @@ const Header = () => {
               className="block px-3 py-2 text-base font-medium text-gray-700 rounded-md hover:text-gray-900 hover:bg-gray-100"
               onClick={toggleMenu}
             >
-              Beranda
+              Home
             </Link>
 
             {/* Mobile Services Dropdown */}
@@ -130,7 +126,7 @@ const Header = () => {
                 className="flex justify-between w-full px-3 py-2 text-base font-medium text-gray-700 rounded-md hover:text-gray-900 hover:bg-gray-100"
                 onClick={toggleServices}
               >
-                Layanan Kami
+                Paket
                 <ChevronDown
                   className={cn(
                     "h-5 w-5 transition-transform",
@@ -160,7 +156,7 @@ const Header = () => {
                     className="block px-3 py-2 text-base font-medium text-gray-700 rounded-md hover:text-gray-900 hover:bg-gray-100"
                     onClick={toggleMenu}
                   >
-                    Visa
+                    Paket Tour
                   </Link>
                 </div>
               )}
@@ -171,28 +167,21 @@ const Header = () => {
               className="block px-3 py-2 text-base font-medium text-gray-700 rounded-md hover:text-gray-900 hover:bg-gray-100"
               onClick={toggleMenu}
             >
-              Hubungi Kami
+              Blog
             </Link>
             <Link
               href="/tentang-kami"
               className="block px-3 py-2 text-base font-medium text-gray-700 rounded-md hover:text-gray-900 hover:bg-gray-100"
               onClick={toggleMenu}
             >
-              Tentang Kami
+              Tentang
             </Link>
             <Link
               href="/testimoni"
               className="block px-3 py-2 text-base font-medium text-gray-700 rounded-md hover:text-gray-900 hover:bg-gray-100"
               onClick={toggleMenu}
             >
-              Testimoni
-            </Link>
-            <Link
-              href="/gallery"
-              className="block px-3 py-2 text-base font-medium text-gray-700 rounded-md hover:text-gray-900 hover:bg-gray-100"
-              onClick={toggleMenu}
-            >
-              Gallery
+              Cabang
             </Link>
           </div>
         </div>

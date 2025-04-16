@@ -45,27 +45,7 @@ const TestPage = () => {
           <h2 className="mb-12 text-3xl font-bold text-center text-[#ff7200]">
             Sini saya tunjukin cara pilih Travel umroh
           </h2>
-          {/* <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-            {[
-              "Pastikan informasi travel mudah di akses",
-              "Pastikan izin travel bisa di akses",
-              "Pastikan informasi keberangkatan",
-              "Pastikan pembimbing umroh anda kenal",
-              "Pastikan fasilitas nya lengkap",
-            ].map((item, index) => (
-              <CardContent
-                key={index}
-                className="border-2 border-orange-500 rounded shadow-md"
-              >
-                <CardContent className="flex items-start gap-4 p-6">
-                  <div className="flex items-center justify-center w-10 h-10 text-[#1d6b05] bg-green-100 rounded-full shrink-0">
-                    <Check className="w-6 h-6" />
-                  </div>
-                  <p className="text-lg font-medium">{item}</p>
-                </CardContent>
-              </CardContent>
-            ))}
-          </div> */}
+
           <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
             <Card className="bg-white border-2 border-orange-500 shadow-md">
               <CardContent className="p-6">
