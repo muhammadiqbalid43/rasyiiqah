@@ -19,7 +19,7 @@ const BlogCard = () => {
             fill
             className="object-cover"
           /> */}
-          <div className="bg-gray-400 md:w-[400px] h-[300px]"></div>
+          <div className="bg-gray-400 md:w-[400px] h-[200px]"></div>
         </div>
         <CardHeader>
           <div className="flex items-center justify-between">
