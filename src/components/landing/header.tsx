@@ -71,7 +71,7 @@ const Header = () => {
               )}
             </div>
             <Link
-              href="#cta"
+              href="/blog"
               className="text-sm font-medium text-gray-700 rounded-md hover:text-gray-900"
             >
               Blog
@@ -163,7 +163,7 @@ const Header = () => {
             </div>
 
             <Link
-              href="/hubungi-kami"
+              href="/blog"
               className="block px-3 py-2 text-base font-medium text-gray-700 rounded-md hover:text-gray-900 hover:bg-gray-100"
               onClick={toggleMenu}
             >
