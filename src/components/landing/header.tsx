@@ -29,31 +29,33 @@ const Header = () => {
 
             {/* Services Dropdown */}
             <div className="relative">
-              <button
-                onClick={toggleServices}
-                className="flex items-center gap-1 px-3 py-2 text-sm font-medium text-gray-700 rounded-md hover:text-gray-900"
-              >
-                Paket
-                <ChevronDown
-                  className={cn(
-                    "h-4 w-4 transition-transform",
-                    isServicesOpen && "rotate-180"
-                  )}
-                />
-              </button>
+              <Link href="/paket">
+                <button
+                  onClick={toggleServices}
+                  className="flex items-center gap-1 px-3 py-2 text-sm font-medium text-gray-700 rounded-md hover:text-gray-900"
+                >
+                  Paket
+                  <ChevronDown
+                    className={cn(
+                      "h-4 w-4 transition-transform",
+                      isServicesOpen && "rotate-180"
+                    )}
+                  />
+                </button>
+              </Link>
 
               {isServicesOpen && (
                 <div className="absolute z-10 w-48 mt-2 bg-white rounded-md shadow-lg ring-1 ring-black ring-opacity-5">
                   <div className="py-1" role="menu" aria-orientation="vertical">
                     <Link
-                      href="/layanan/paket-haji"
+                      href="/paket-haji"
                       className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
                       onClick={() => setIsServicesOpen(false)}
                     >
                       Paket Haji
                     </Link>
                     <Link
-                      href="/layanan/paket-umroh"
+                      href="/paket-umroh"
                       className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
                       onClick={() => setIsServicesOpen(false)}
                     >
