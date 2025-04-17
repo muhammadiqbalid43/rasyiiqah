@@ -77,7 +77,7 @@ const Header = () => {
               Blog
             </Link>
             <Link
-              href="#tentang-kami"
+              href="/about"
               className="text-sm font-medium text-gray-700 rounded-md hover:text-gray-900"
             >
               Tentang
