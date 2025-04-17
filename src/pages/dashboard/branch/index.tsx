@@ -16,6 +16,7 @@ import { useBranches, useDeleteBranch } from "@/queries/branch-queries";
 import { useQueryState } from "nuqs";
 import { FormDialog } from "./_partials/form-dialog";
 import { BASE_URL } from "@/lib/constants";
+import Image from "next/image";
 
 const BranchesPage = () => {
   const [page, setPage] = useQueryState("page", { defaultValue: "1" });
@@ -80,9 +81,11 @@ const BranchesPage = () => {
                   </TableCell>
                   <TableCell>
                     {branch.imageUrl && (
-                      <img
+                      <Image
                         src={`${BASE_URL}/storage/${branch.imageUrl}`}
                         alt={`Branch ${branch.name}`}
+                        width={96}
+                        height={96}
                         className="h-24"
                       />
                     )}

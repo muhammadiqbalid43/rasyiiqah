@@ -23,9 +23,8 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import React from "react";
 import { SubmitHandler, useForm } from "react-hook-form";
 import { z } from "zod";
-import { Schema, schema } from "./schema";
-import { baseUrl, getBaseURL } from "@/lib/utils";
 import { BASE_URL } from "@/lib/constants";
+import { Schema, schema } from "@/lib/schemas/branch-schema";
 
 interface Props {
   children: React.ReactNode;
@@ -201,3 +200,5 @@ export const FormDialog = ({ children, branch }: Props) => {
     </Dialog>
   );
 };
+
+export default FormDialog;
