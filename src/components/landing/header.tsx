@@ -11,9 +11,9 @@ const Header = () => {
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
   const toggleServices = () => setIsServicesOpen(!isServicesOpen);
   return (
-    <nav className="shadow-sm">
-      <div className="px-4 mx-auto max-w-7xl md:px-6 lg:px-8">
-        <div className="flex justify-between h-16">
+    <nav className="h-20 shadow-sm ">
+      <div className="h-20 mx-auto max-w-7xl md:px-6 lg:px-8 ">
+        <div className="flex items-center justify-between h-20 ">
           <div className="flex items-center">
             <Link href="/">
               {" "}

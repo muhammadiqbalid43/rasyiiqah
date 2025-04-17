@@ -6,6 +6,7 @@ import Hero from "@/components/landing/hero";
 import JadwalKeberangkatan from "@/components/landing/jadwal-keberangkatan";
 import News from "@/components/landing/news";
 import PaketUmroh from "@/components/landing/paket-umroh";
+import ProdukKategori from "@/components/landing/produk-kategori";
 import Testimoni from "@/components/landing/testimoni";
 
 export default function Home() {
@@ -13,9 +14,11 @@ export default function Home() {
     <div>
       <Header />
       <Hero />
+      <ProdukKategori />
+      <Testimoni />
       <JadwalKeberangkatan />
       <PaketUmroh />
-      <Testimoni />
+
       <Gallery />
       <News />
       <Cta />

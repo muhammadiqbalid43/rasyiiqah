@@ -1,59 +1,69 @@
-import { StarIcon } from "lucide-react";
-import { Card, CardContent } from "../ui/card";
+import { Star } from "lucide-react";
 
 const Testimoni = () => {
   return (
-    <div className="py-16 bg-gray-50" id="testimoni">
-      <div className="container px-4 mx-auto">
-        <div className="mb-10 text-center">
-          <h2 className="mb-2 text-3xl font-bold tracking-tight">Testimoni</h2>
-          <p className="max-w-2xl mx-auto text-muted-foreground">
-            Apa kata jamaah yang telah menggunakan layanan kami
-          </p>
-        </div>
-        <div className="grid gap-6 md:grid-cols-3">
+    <section className="px-4 py-16 md:px-8 bg-gray-50">
+      <div className="container mx-auto">
+        <h2 className="mb-12 text-3xl font-bold text-center">
+          Testimoni Jamaah
+        </h2>
+        <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
           {testimonials.map((testimonial, index) => (
-            <Card key={index} className="overflow-hidden">
-              <CardContent className="pt-6">
-                <div className="flex mb-4">
+            <div
+              key={index}
+              className="flex flex-col gap-4 p-6 bg-white rounded-lg shadow-md md:flex-row"
+            >
+              <div className="flex-shrink-0">
+                <div className="bg-gray-400 w-[100px] h-[100px] rounded"></div>
+              </div>
+              <div>
+                <div className="flex items-center mb-2">
                   {[...Array(5)].map((_, i) => (
-                    <StarIcon
+                    <Star
                       key={i}
-                      className={`h-5 w-5 ${
+                      className={`h-4 w-4 ${
                         i < testimonial.rating
-                          ? "fill-yellow-400 text-yellow-400"
+                          ? "text-yellow-400 fill-yellow-400"
                           : "text-gray-300"
                       }`}
                     />
                   ))}
                 </div>
-                <p className="mb-4 italic text-muted-foreground">
-                  &quot;{testimonial.text}&quot;
-                </p>
-                <div className="flex items-center gap-3">
-                  <div className="w-10 h-10 overflow-hidden bg-gray-200 rounded-full">
-                    {/* <Image
-                      src="/placeholder.svg?height=40&width=40"
-                      alt={testimonial.name}
-                      width={40}
-                      height={40}
-                      className="object-cover w-full h-full"
-                    /> */}
-                    <div className="w-[40px] h-[40px] bg-slate-400"></div>
-                  </div>
-                  <div>
-                    <p className="font-medium">{testimonial.name}</p>
-                    <p className="text-sm text-muted-foreground">
-                      {testimonial.trip}
-                    </p>
-                  </div>
+                <p className="mb-4 text-gray-700">{testimonial.text}</p>
+                <div>
+                  <p className="font-semibold">{testimonial.name}</p>
+                  <p className="text-sm text-gray-500">{testimonial.package}</p>
                 </div>
-              </CardContent>
-            </Card>
+              </div>
+            </div>
           ))}
         </div>
+        <div className="mt-12 text-center">
+          <h3 className="mb-6 text-2xl font-bold">Video Testimoni</h3>
+          <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
+            {videoTestimonials.map((video, index) => (
+              <div
+                key={index}
+                className="overflow-hidden bg-white rounded-lg shadow-md"
+              >
+                <div className="relative aspect-video">
+                  <div className="bg-gray-400 w-full h-[220px] rounded"></div>
+                  <div className="absolute inset-0 flex items-center justify-center">
+                    <div className="flex items-center justify-center w-16 h-16 rounded-full bg-white/80">
+                      <div className="w-0 h-0 ml-1 border-t-8 border-b-8 border-l-12 border-t-transparent border-b-transparent border-l-emerald-600"></div>
+                    </div>
+                  </div>
+                </div>
+                <div className="p-4">
+                  <h4 className="font-semibold">{video.title}</h4>
+                  <p className="text-sm text-gray-500">{video.duration}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
       </div>
-    </div>
+    </section>
   );
 };
 
@@ -61,21 +71,49 @@ export default Testimoni;
 
 const testimonials = [
   {
-    name: "Bapak Ahmad Sudrajat",
-    trip: "Umroh Reguler, Februari 2023",
+    name: "Muhammad Iqbal",
+    image: "/placeholder.svg?height=100&width=100",
     rating: 5,
-    text: "Alhamdulillah, perjalanan umroh bersama travel ini sangat berkesan. Pelayanannya sangat baik dan pembimbingnya sangat sabar dalam mengarahkan jamaah.",
+    text: "Alhamdulillah, perjalanan umroh bersama travel ini sangat berkesan. Pelayanan yang diberikan sangat baik, pembimbing yang sabar dan hotel yang nyaman dekat dengan Masjidil Haram.",
+    package: "Umroh Reguler 2023",
   },
   {
-    name: "Ibu Siti Aminah",
-    trip: "Umroh Plus Turki, Januari 2023",
+    name: "Siti Aminah",
+    image: "/placeholder.svg?height=100&width=100",
     rating: 5,
-    text: "Sangat puas dengan pelayanan yang diberikan. Hotel yang disediakan sangat nyaman dan dekat dengan Masjidil Haram. Tour ke Turki juga sangat menyenangkan.",
+    text: "Pengalaman pertama umroh dan sangat puas dengan pelayanan yang diberikan. Semua diurus dengan baik dari awal keberangkatan hingga kepulangan. Insya Allah akan menggunakan jasa travel ini lagi.",
+    package: "Umroh Plus Turki 2023",
   },
   {
-    name: "Bapak Hendra Wijaya",
-    trip: "Umroh VIP, Desember 2022",
+    name: "Fadli Hidayatullah",
+    image: "/placeholder.svg?height=100&width=100",
     rating: 4,
-    text: "Pelayanan VIP yang diberikan sesuai dengan ekspektasi. Pembimbing sangat membantu dan menguasai ilmu manasik. Sangat direkomendasikan.",
+    text: "Pelayanan yang sangat memuaskan, meskipun ada sedikit kendala di akomodasi tapi cepat diatasi oleh tim. Pembimbing sangat kompeten dan sabar membimbing kami.",
+    package: "Umroh Ramadhan 2023",
+  },
+  {
+    name: "Fatimah Azzahra",
+    image: "/placeholder.svg?height=100&width=100",
+    rating: 5,
+    text: "Alhamdulillah bisa berangkat haji dengan travel ini. Pelayanan sangat baik, hotel dekat dengan Masjidil Haram, makanan enak dan halal. Sangat direkomendasikan!",
+    package: "Haji Plus 2022",
+  },
+];
+
+const videoTestimonials = [
+  {
+    title: "Testimoni Umroh Reguler 2023",
+    thumbnail: "/placeholder.svg?height=200&width=350",
+    duration: "3:45",
+  },
+  {
+    title: "Pengalaman Haji Plus 2022",
+    thumbnail: "/placeholder.svg?height=200&width=350",
+    duration: "5:20",
+  },
+  {
+    title: "Tour Turki Bersama Keluarga",
+    thumbnail: "/placeholder.svg?height=200&width=350",
+    duration: "4:15",
   },
 ];
