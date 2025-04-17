@@ -83,7 +83,7 @@ const Header = () => {
               Tentang
             </Link>
             <Link
-              href="#testimoni"
+              href="/cabang"
               className="text-sm font-medium text-gray-700 rounded-md hover:text-gray-900"
             >
               Cabang

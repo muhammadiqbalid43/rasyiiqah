@@ -278,7 +278,7 @@ const AboutPage = () => {
                     ))}
                   </div>
                   <p className="mb-4 italic text-gray-700">
-                    "{testimonial.quote}"
+                    &quot;{testimonial.quote}&quot;
                   </p>
                   <div>
                     <p className="font-bold">{testimonial.name}</p>
