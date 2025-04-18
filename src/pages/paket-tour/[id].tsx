@@ -1,7 +1,7 @@
 import Layout from "@/components/layout";
 import { Button } from "@/components/ui/button";
 
-const PaketHajiDetail = () => {
+const PaketTourDetail = () => {
   return (
     <Layout>
       <div className="container mx-auto mt-14 mb-9">
@@ -16,7 +16,7 @@ const PaketHajiDetail = () => {
           <div>
             <div className="w-[390px] md:w-[900px] p-6 mx-auto space-y-4 text-gray-800 bg-white shadow-lg rounded-2xl">
               <h2 className="text-xl font-extrabold text-green-600 md:text-5xl">
-                PAKET HAJI 2026
+                PAKET TOUR 2026
               </h2>
               <p className="font-medium ">
                 Keberangkatan:{" "}
@@ -141,4 +141,4 @@ const PaketHajiDetail = () => {
   );
 };
 
-export default PaketHajiDetail;
+export default PaketTourDetail;
