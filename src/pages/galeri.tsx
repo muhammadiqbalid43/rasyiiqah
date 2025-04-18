@@ -1,3 +1,4 @@
+import GaleriGrid from "@/components/galeri/galeri-grid";
 import Layout from "@/components/layout";
 
 const GaleriPage = () => {
@@ -14,48 +15,7 @@ const GaleriPage = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 gap-8 md:grid-cols-4 md:place-items-center">
-          <img
-            src="https://images.pexels.com/photos/31565687/pexels-photo-31565687/free-photo-of-view-of-abraj-al-bait-towers-in-mecca-saudi-arabia.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-            alt="galeri image"
-            className="object-cover w-[360px] h-[272px] rounded-2xl "
-          />
-          <img
-            src="https://images.pexels.com/photos/31565687/pexels-photo-31565687/free-photo-of-view-of-abraj-al-bait-towers-in-mecca-saudi-arabia.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-            alt="galeri image"
-            className="object-cover w-[360px] h-[272px] rounded-2xl "
-          />
-          <img
-            src="https://images.pexels.com/photos/31565687/pexels-photo-31565687/free-photo-of-view-of-abraj-al-bait-towers-in-mecca-saudi-arabia.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-            alt="galeri image"
-            className="object-cover w-[360px] h-[272px] rounded-2xl "
-          />
-          <img
-            src="https://images.pexels.com/photos/31565687/pexels-photo-31565687/free-photo-of-view-of-abraj-al-bait-towers-in-mecca-saudi-arabia.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-            alt="galeri image"
-            className="object-cover w-[360px] h-[272px] rounded-2xl "
-          />
-          <img
-            src="https://images.pexels.com/photos/31565687/pexels-photo-31565687/free-photo-of-view-of-abraj-al-bait-towers-in-mecca-saudi-arabia.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-            alt="galeri image"
-            className="object-cover w-[360px] h-[272px] rounded-2xl "
-          />
-          <img
-            src="https://images.pexels.com/photos/31565687/pexels-photo-31565687/free-photo-of-view-of-abraj-al-bait-towers-in-mecca-saudi-arabia.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-            alt="galeri image"
-            className="object-cover w-[360px] h-[272px] rounded-2xl "
-          />
-          <img
-            src="https://images.pexels.com/photos/31565687/pexels-photo-31565687/free-photo-of-view-of-abraj-al-bait-towers-in-mecca-saudi-arabia.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-            alt="galeri image"
-            className="object-cover w-[360px] h-[272px] rounded-2xl "
-          />
-          <img
-            src="https://images.pexels.com/photos/31565687/pexels-photo-31565687/free-photo-of-view-of-abraj-al-bait-towers-in-mecca-saudi-arabia.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-            alt="galeri image"
-            className="object-cover w-[360px] h-[272px] rounded-2xl "
-          />
-        </div>
+        <GaleriGrid />
       </div>
     </Layout>
   );
