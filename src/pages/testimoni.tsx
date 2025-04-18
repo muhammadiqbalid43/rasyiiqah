@@ -1,5 +1,6 @@
+import GaleriGrid from "@/components/galeri/galeri-grid";
 import Layout from "@/components/layout";
-import Image from "next/image";
+import TestimonialCard from "@/components/testimoni/testimonial-card";
 
 const TestimoniPage = () => {
   return (
@@ -16,7 +17,7 @@ const TestimoniPage = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 gap-8 md:grid-cols-3 md:place-items-center">
+        {/* <div className="grid grid-cols-1 gap-8 md:grid-cols-3 md:place-items-center">
           <Image
             src="https://images.pexels.com/photos/31565687/pexels-photo-31565687/free-photo-of-view-of-abraj-al-bait-towers-in-mecca-saudi-arabia.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
             alt="galeri image"
@@ -59,6 +60,13 @@ const TestimoniPage = () => {
             height={272}
             className="object-cover rounded-2xl "
           />
+        </div> */}
+        <GaleriGrid />
+
+        <div className="grid grid-cols-1 gap-6 mt-20 md:grid-cols-3">
+          <TestimonialCard name="Siti Aminah" videoId="oLbHRAGEnOc" />
+          <TestimonialCard name="Siti Aminah" videoId="oLbHRAGEnOc" />
+          <TestimonialCard name="Siti Aminah" videoId="oLbHRAGEnOc" />
         </div>
       </div>
     </Layout>
