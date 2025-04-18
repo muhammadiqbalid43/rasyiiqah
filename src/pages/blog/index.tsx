@@ -30,8 +30,8 @@ const BlogPage = () => {
           </section>
           <section className="w-full ">
             <div className="container px-4 mx-auto md:px-6">
-              <div className="grid items-start grid-cols-1 py-12 mx-auto gap-y-10 md:gap-6 md:grid-cols-3 ">
-                <Card className="overflow-hidden w-[360px]">
+              <div className="grid items-start grid-cols-1 py-12 mx-auto gap-y-10 md:gap-6 md:grid-cols-4 ">
+                <Card className="w-full overflow-hidden">
                   <div>
                     <img
                       src="https://images.pexels.com/photos/31565687/pexels-photo-31565687/free-photo-of-view-of-abraj-al-bait-towers-in-mecca-saudi-arabia.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
@@ -59,7 +59,7 @@ const BlogPage = () => {
                     </Button>
                   </CardFooter>
                 </Card>
-                <Card className="overflow-hidden w-[360px]">
+                <Card className="w-full overflow-hidden">
                   <div>
                     <img
                       src="https://images.pexels.com/photos/31565687/pexels-photo-31565687/free-photo-of-view-of-abraj-al-bait-towers-in-mecca-saudi-arabia.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
@@ -87,7 +87,7 @@ const BlogPage = () => {
                     </Button>
                   </CardFooter>
                 </Card>
-                <Card className="overflow-hidden w-[360px]">
+                <Card className="w-full overflow-hidden">
                   <div>
                     <img
                       src="https://images.pexels.com/photos/31565687/pexels-photo-31565687/free-photo-of-view-of-abraj-al-bait-towers-in-mecca-saudi-arabia.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
@@ -115,7 +115,7 @@ const BlogPage = () => {
                     </Button>
                   </CardFooter>
                 </Card>
-                <Card className="overflow-hidden w-[360px]">
+                <Card className="w-full overflow-hidden">
                   <div>
                     <img
                       src="https://images.pexels.com/photos/31565687/pexels-photo-31565687/free-photo-of-view-of-abraj-al-bait-towers-in-mecca-saudi-arabia.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
@@ -143,7 +143,7 @@ const BlogPage = () => {
                     </Button>
                   </CardFooter>
                 </Card>
-                <Card className="overflow-hidden w-[360px]">
+                <Card className="w-full overflow-hidden">
                   <div>
                     <img
                       src="https://images.pexels.com/photos/31565687/pexels-photo-31565687/free-photo-of-view-of-abraj-al-bait-towers-in-mecca-saudi-arabia.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
@@ -171,7 +171,63 @@ const BlogPage = () => {
                     </Button>
                   </CardFooter>
                 </Card>
-                <Card className="overflow-hidden w-[360px]">
+                <Card className="w-full overflow-hidden">
+                  <div>
+                    <img
+                      src="https://images.pexels.com/photos/31565687/pexels-photo-31565687/free-photo-of-view-of-abraj-al-bait-towers-in-mecca-saudi-arabia.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                      alt="galeri image"
+                      className="object-cover w-full h-[272px] rounded-t-xl "
+                    />
+                  </div>
+                  <CardHeader>
+                    <div className="flex items-center gap-2 text-sm text-gray-500">
+                      <CalendarIcon className="w-4 h-4" />
+                      <span>April 15, 2025</span>
+                    </div>
+                    <CardTitle className="text-2xl">
+                      Persiapan Umrah Pertama Anda: Panduan Lengkap
+                    </CardTitle>
+                    <CardDescription>
+                      Segala sesuatu yang perlu Anda ketahui sebelum memulai
+                      perjalanan suci Anda ke Mekkah.
+                    </CardDescription>
+                  </CardHeader>
+                  <CardFooter>
+                    <Button variant="outline" className="w-full">
+                      Baca Selengkapnya
+                      <ChevronRightIcon className="w-4 h-4 ml-2" />
+                    </Button>
+                  </CardFooter>
+                </Card>
+                <Card className="w-full overflow-hidden">
+                  <div>
+                    <img
+                      src="https://images.pexels.com/photos/31565687/pexels-photo-31565687/free-photo-of-view-of-abraj-al-bait-towers-in-mecca-saudi-arabia.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                      alt="galeri image"
+                      className="object-cover w-full h-[272px] rounded-t-xl "
+                    />
+                  </div>
+                  <CardHeader>
+                    <div className="flex items-center gap-2 text-sm text-gray-500">
+                      <CalendarIcon className="w-4 h-4" />
+                      <span>April 15, 2025</span>
+                    </div>
+                    <CardTitle className="text-2xl">
+                      Persiapan Umrah Pertama Anda: Panduan Lengkap
+                    </CardTitle>
+                    <CardDescription>
+                      Segala sesuatu yang perlu Anda ketahui sebelum memulai
+                      perjalanan suci Anda ke Mekkah.
+                    </CardDescription>
+                  </CardHeader>
+                  <CardFooter>
+                    <Button variant="outline" className="w-full">
+                      Baca Selengkapnya
+                      <ChevronRightIcon className="w-4 h-4 ml-2" />
+                    </Button>
+                  </CardFooter>
+                </Card>
+                <Card className="w-full overflow-hidden">
                   <div>
                     <img
                       src="https://images.pexels.com/photos/31565687/pexels-photo-31565687/free-photo-of-view-of-abraj-al-bait-towers-in-mecca-saudi-arabia.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
