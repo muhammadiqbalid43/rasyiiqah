@@ -1,14 +1,6 @@
 import Layout from "@/components/layout";
 import { Button } from "@/components/ui/button";
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardFooter,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
-import { CalendarIcon, MapPinIcon, Users } from "lucide-react";
+import { Card, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 
 const PaketUmroh = () => {
   return (
@@ -33,41 +25,14 @@ const PaketUmroh = () => {
                 </div>
               </div>
               <CardTitle>Umroh Reguler</CardTitle>
-              <CardDescription>
-                Paket Umroh reguler dengan pelayanan terbaik
-              </CardDescription>
             </CardHeader>
-            <CardContent>
-              <div className="space-y-2">
-                <div className="flex items-center">
-                  <CalendarIcon className="w-4 h-4 mr-2 text-green-600" />
-                  <span className="text-sm">Durasi: 40 Hari</span>
-                </div>
-                <div className="flex items-center">
-                  <MapPinIcon className="w-4 h-4 mr-2 text-green-600" />
-                  <span className="text-sm">Mekah & Madinah</span>
-                </div>
-                <div className="flex items-center">
-                  <Users className="w-4 h-4 mr-2 text-green-600" />
-                  <span className="text-sm">Kuota Terbatas</span>
-                </div>
-                <div className="mt-4">
-                  <p className="text-2xl font-bold text-green-600">
-                    Rp 150.000.000
-                  </p>
-                  <p className="text-sm text-muted-foreground">
-                    *Harga dapat berubah sesuai ketentuan
-                  </p>
-                </div>
-              </div>
-            </CardContent>
+
             <CardFooter>
               <Button className="w-full bg-green-600 hover:bg-green-700">
                 Lihat Detail
               </Button>
             </CardFooter>
           </Card>
-
           <Card className="w-[350px] md:w-full">
             <CardHeader>
               <div className="relative w-full h-48 mb-4 overflow-hidden rounded-t-lg">
@@ -81,41 +46,14 @@ const PaketUmroh = () => {
                 </div>
               </div>
               <CardTitle>Umroh Reguler</CardTitle>
-              <CardDescription>
-                Paket Umroh reguler dengan pelayanan terbaik
-              </CardDescription>
             </CardHeader>
-            <CardContent>
-              <div className="space-y-2">
-                <div className="flex items-center">
-                  <CalendarIcon className="w-4 h-4 mr-2 text-green-600" />
-                  <span className="text-sm">Durasi: 40 Hari</span>
-                </div>
-                <div className="flex items-center">
-                  <MapPinIcon className="w-4 h-4 mr-2 text-green-600" />
-                  <span className="text-sm">Mekah & Madinah</span>
-                </div>
-                <div className="flex items-center">
-                  <Users className="w-4 h-4 mr-2 text-green-600" />
-                  <span className="text-sm">Kuota Terbatas</span>
-                </div>
-                <div className="mt-4">
-                  <p className="text-2xl font-bold text-green-600">
-                    Rp 150.000.000
-                  </p>
-                  <p className="text-sm text-muted-foreground">
-                    *Harga dapat berubah sesuai ketentuan
-                  </p>
-                </div>
-              </div>
-            </CardContent>
+
             <CardFooter>
               <Button className="w-full bg-green-600 hover:bg-green-700">
                 Lihat Detail
               </Button>
             </CardFooter>
           </Card>
-
           <Card className="w-[350px] md:w-full">
             <CardHeader>
               <div className="relative w-full h-48 mb-4 overflow-hidden rounded-t-lg">
@@ -129,41 +67,14 @@ const PaketUmroh = () => {
                 </div>
               </div>
               <CardTitle>Umroh Reguler</CardTitle>
-              <CardDescription>
-                Paket Umroh reguler dengan pelayanan terbaik
-              </CardDescription>
             </CardHeader>
-            <CardContent>
-              <div className="space-y-2">
-                <div className="flex items-center">
-                  <CalendarIcon className="w-4 h-4 mr-2 text-green-600" />
-                  <span className="text-sm">Durasi: 40 Hari</span>
-                </div>
-                <div className="flex items-center">
-                  <MapPinIcon className="w-4 h-4 mr-2 text-green-600" />
-                  <span className="text-sm">Mekah & Madinah</span>
-                </div>
-                <div className="flex items-center">
-                  <Users className="w-4 h-4 mr-2 text-green-600" />
-                  <span className="text-sm">Kuota Terbatas</span>
-                </div>
-                <div className="mt-4">
-                  <p className="text-2xl font-bold text-green-600">
-                    Rp 150.000.000
-                  </p>
-                  <p className="text-sm text-muted-foreground">
-                    *Harga dapat berubah sesuai ketentuan
-                  </p>
-                </div>
-              </div>
-            </CardContent>
+
             <CardFooter>
               <Button className="w-full bg-green-600 hover:bg-green-700">
                 Lihat Detail
               </Button>
             </CardFooter>
           </Card>
-
           <Card className="w-[350px] md:w-full">
             <CardHeader>
               <div className="relative w-full h-48 mb-4 overflow-hidden rounded-t-lg">
@@ -177,41 +88,14 @@ const PaketUmroh = () => {
                 </div>
               </div>
               <CardTitle>Umroh Reguler</CardTitle>
-              <CardDescription>
-                Paket Umroh reguler dengan pelayanan terbaik
-              </CardDescription>
             </CardHeader>
-            <CardContent>
-              <div className="space-y-2">
-                <div className="flex items-center">
-                  <CalendarIcon className="w-4 h-4 mr-2 text-green-600" />
-                  <span className="text-sm">Durasi: 40 Hari</span>
-                </div>
-                <div className="flex items-center">
-                  <MapPinIcon className="w-4 h-4 mr-2 text-green-600" />
-                  <span className="text-sm">Mekah & Madinah</span>
-                </div>
-                <div className="flex items-center">
-                  <Users className="w-4 h-4 mr-2 text-green-600" />
-                  <span className="text-sm">Kuota Terbatas</span>
-                </div>
-                <div className="mt-4">
-                  <p className="text-2xl font-bold text-green-600">
-                    Rp 150.000.000
-                  </p>
-                  <p className="text-sm text-muted-foreground">
-                    *Harga dapat berubah sesuai ketentuan
-                  </p>
-                </div>
-              </div>
-            </CardContent>
+
             <CardFooter>
               <Button className="w-full bg-green-600 hover:bg-green-700">
                 Lihat Detail
               </Button>
             </CardFooter>
           </Card>
-
           <Card className="w-[350px] md:w-full">
             <CardHeader>
               <div className="relative w-full h-48 mb-4 overflow-hidden rounded-t-lg">
@@ -225,41 +109,14 @@ const PaketUmroh = () => {
                 </div>
               </div>
               <CardTitle>Umroh Reguler</CardTitle>
-              <CardDescription>
-                Paket Umroh reguler dengan pelayanan terbaik
-              </CardDescription>
             </CardHeader>
-            <CardContent>
-              <div className="space-y-2">
-                <div className="flex items-center">
-                  <CalendarIcon className="w-4 h-4 mr-2 text-green-600" />
-                  <span className="text-sm">Durasi: 40 Hari</span>
-                </div>
-                <div className="flex items-center">
-                  <MapPinIcon className="w-4 h-4 mr-2 text-green-600" />
-                  <span className="text-sm">Mekah & Madinah</span>
-                </div>
-                <div className="flex items-center">
-                  <Users className="w-4 h-4 mr-2 text-green-600" />
-                  <span className="text-sm">Kuota Terbatas</span>
-                </div>
-                <div className="mt-4">
-                  <p className="text-2xl font-bold text-green-600">
-                    Rp 150.000.000
-                  </p>
-                  <p className="text-sm text-muted-foreground">
-                    *Harga dapat berubah sesuai ketentuan
-                  </p>
-                </div>
-              </div>
-            </CardContent>
+
             <CardFooter>
               <Button className="w-full bg-green-600 hover:bg-green-700">
                 Lihat Detail
               </Button>
             </CardFooter>
           </Card>
-
           <Card className="w-[350px] md:w-full">
             <CardHeader>
               <div className="relative w-full h-48 mb-4 overflow-hidden rounded-t-lg">
@@ -273,41 +130,14 @@ const PaketUmroh = () => {
                 </div>
               </div>
               <CardTitle>Umroh Reguler</CardTitle>
-              <CardDescription>
-                Paket Umroh reguler dengan pelayanan terbaik
-              </CardDescription>
             </CardHeader>
-            <CardContent>
-              <div className="space-y-2">
-                <div className="flex items-center">
-                  <CalendarIcon className="w-4 h-4 mr-2 text-green-600" />
-                  <span className="text-sm">Durasi: 40 Hari</span>
-                </div>
-                <div className="flex items-center">
-                  <MapPinIcon className="w-4 h-4 mr-2 text-green-600" />
-                  <span className="text-sm">Mekah & Madinah</span>
-                </div>
-                <div className="flex items-center">
-                  <Users className="w-4 h-4 mr-2 text-green-600" />
-                  <span className="text-sm">Kuota Terbatas</span>
-                </div>
-                <div className="mt-4">
-                  <p className="text-2xl font-bold text-green-600">
-                    Rp 150.000.000
-                  </p>
-                  <p className="text-sm text-muted-foreground">
-                    *Harga dapat berubah sesuai ketentuan
-                  </p>
-                </div>
-              </div>
-            </CardContent>
+
             <CardFooter>
               <Button className="w-full bg-green-600 hover:bg-green-700">
                 Lihat Detail
               </Button>
             </CardFooter>
           </Card>
-
           <Card className="w-[350px] md:w-full">
             <CardHeader>
               <div className="relative w-full h-48 mb-4 overflow-hidden rounded-t-lg">
@@ -321,41 +151,14 @@ const PaketUmroh = () => {
                 </div>
               </div>
               <CardTitle>Umroh Reguler</CardTitle>
-              <CardDescription>
-                Paket Umroh reguler dengan pelayanan terbaik
-              </CardDescription>
             </CardHeader>
-            <CardContent>
-              <div className="space-y-2">
-                <div className="flex items-center">
-                  <CalendarIcon className="w-4 h-4 mr-2 text-green-600" />
-                  <span className="text-sm">Durasi: 40 Hari</span>
-                </div>
-                <div className="flex items-center">
-                  <MapPinIcon className="w-4 h-4 mr-2 text-green-600" />
-                  <span className="text-sm">Mekah & Madinah</span>
-                </div>
-                <div className="flex items-center">
-                  <Users className="w-4 h-4 mr-2 text-green-600" />
-                  <span className="text-sm">Kuota Terbatas</span>
-                </div>
-                <div className="mt-4">
-                  <p className="text-2xl font-bold text-green-600">
-                    Rp 150.000.000
-                  </p>
-                  <p className="text-sm text-muted-foreground">
-                    *Harga dapat berubah sesuai ketentuan
-                  </p>
-                </div>
-              </div>
-            </CardContent>
+
             <CardFooter>
               <Button className="w-full bg-green-600 hover:bg-green-700">
                 Lihat Detail
               </Button>
             </CardFooter>
           </Card>
-
           <Card className="w-[350px] md:w-full">
             <CardHeader>
               <div className="relative w-full h-48 mb-4 overflow-hidden rounded-t-lg">
@@ -369,34 +172,8 @@ const PaketUmroh = () => {
                 </div>
               </div>
               <CardTitle>Umroh Reguler</CardTitle>
-              <CardDescription>
-                Paket Umroh reguler dengan pelayanan terbaik
-              </CardDescription>
             </CardHeader>
-            <CardContent>
-              <div className="space-y-2">
-                <div className="flex items-center">
-                  <CalendarIcon className="w-4 h-4 mr-2 text-green-600" />
-                  <span className="text-sm">Durasi: 40 Hari</span>
-                </div>
-                <div className="flex items-center">
-                  <MapPinIcon className="w-4 h-4 mr-2 text-green-600" />
-                  <span className="text-sm">Mekah & Madinah</span>
-                </div>
-                <div className="flex items-center">
-                  <Users className="w-4 h-4 mr-2 text-green-600" />
-                  <span className="text-sm">Kuota Terbatas</span>
-                </div>
-                <div className="mt-4">
-                  <p className="text-2xl font-bold text-green-600">
-                    Rp 150.000.000
-                  </p>
-                  <p className="text-sm text-muted-foreground">
-                    *Harga dapat berubah sesuai ketentuan
-                  </p>
-                </div>
-              </div>
-            </CardContent>
+
             <CardFooter>
               <Button className="w-full bg-green-600 hover:bg-green-700">
                 Lihat Detail
