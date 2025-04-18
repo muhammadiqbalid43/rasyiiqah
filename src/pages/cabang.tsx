@@ -1,7 +1,6 @@
 import Layout from "@/components/layout";
 import { Button } from "@/components/ui/button";
 import { MapPin, User } from "lucide-react";
-import Image from "next/image";
 
 const branchOffices = [
   {
@@ -65,14 +64,13 @@ const KantorCabangPage = () => {
           {branchOffices.map((office, index) => (
             <div
               key={index}
-              className="flex h-[430px] md:h-[270px]  md:rounded-r-2xl border-[1px] flex-col overflow-hidden bg-white  shadow-md w-[360px] md:w-[400px]  md:flex-row"
+              className="flex h-[430px] md:h-[270px]  md:rounded-r-2xl border-[1px] flex-col overflow-hidden bg-white  shadow-md w-[400px]   md:flex-row"
             >
               <div className="relative h-64 md:w-1/3 md:h-auto">
-                <Image
+                <img
                   src={office.image}
                   alt={office.owner}
-                  fill
-                  className="object-cover md:w-[170px]"
+                  className="object-cover w-full h-52  md:h-[270px] md:w-[220px]"
                 />
               </div>
               <div className="p-4 md:p-6 md:w-2/3">
