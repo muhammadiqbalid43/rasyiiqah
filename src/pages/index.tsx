@@ -1,6 +1,6 @@
 import Banner from "@/components/landing/banner";
 import Cta from "@/components/landing/cta";
-import Footer from "@/components/landing/footer";
+import Footer2 from "@/components/landing/footer-2";
 import Gallery from "@/components/landing/gallery";
 import Header from "@/components/landing/header";
 import JadwalKeberangkatan from "@/components/landing/jadwal-keberangkatan";
@@ -24,7 +24,7 @@ export default function Home() {
       <Gallery />
       <News />
       <Cta />
-      <Footer />
+      <Footer2 />
     </div>
   );
 }
