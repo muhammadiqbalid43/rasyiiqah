@@ -74,7 +74,6 @@ const KantorCabangPage = () => {
                   fill
                   className="object-cover md:w-[170px]"
                 />
-                {/* <div className="w-full h-[220px] md:h-[272px] md:w-[170px] bg-gray-500 "></div> */}
               </div>
               <div className="p-4 md:p-6 md:w-2/3">
                 <h2 className="mb-2 text-2xl font-bold text-green-800">
