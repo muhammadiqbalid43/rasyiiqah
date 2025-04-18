@@ -10,13 +10,13 @@ import {
 } from "@/components/ui/card";
 import { CalendarIcon, MapPinIcon, Users } from "lucide-react";
 
-const PaketHaji = () => {
+const PaketTour = () => {
   return (
     <Layout>
       <section className="container py-16 mx-auto">
         <div className="mb-12 ml-4 md:ml-0">
           <h1 className="text-3xl font-bold tracking-tight text-green-600 sm:text-4xl md:text-5xl">
-            Paket Haji
+            Paket Tour
           </h1>
         </div>
         <div className="grid grid-cols-1 gap-6 md:grid-cols-4 place-items-center">
@@ -32,9 +32,9 @@ const PaketHaji = () => {
                   Populer
                 </div>
               </div>
-              <CardTitle>Haji Reguler</CardTitle>
+              <CardTitle>Tour Reguler</CardTitle>
               <CardDescription>
-                Paket haji reguler dengan pelayanan terbaik
+                Paket Tour reguler dengan pelayanan terbaik
               </CardDescription>
             </CardHeader>
             <CardContent>
@@ -80,9 +80,9 @@ const PaketHaji = () => {
                   Populer
                 </div>
               </div>
-              <CardTitle>Haji Reguler</CardTitle>
+              <CardTitle>Tour Reguler</CardTitle>
               <CardDescription>
-                Paket haji reguler dengan pelayanan terbaik
+                Paket Tour reguler dengan pelayanan terbaik
               </CardDescription>
             </CardHeader>
             <CardContent>
@@ -128,9 +128,9 @@ const PaketHaji = () => {
                   Populer
                 </div>
               </div>
-              <CardTitle>Haji Reguler</CardTitle>
+              <CardTitle>Tour Reguler</CardTitle>
               <CardDescription>
-                Paket haji reguler dengan pelayanan terbaik
+                Paket Tour reguler dengan pelayanan terbaik
               </CardDescription>
             </CardHeader>
             <CardContent>
@@ -176,9 +176,9 @@ const PaketHaji = () => {
                   Populer
                 </div>
               </div>
-              <CardTitle>Haji Reguler</CardTitle>
+              <CardTitle>Tour Reguler</CardTitle>
               <CardDescription>
-                Paket haji reguler dengan pelayanan terbaik
+                Paket Tour reguler dengan pelayanan terbaik
               </CardDescription>
             </CardHeader>
             <CardContent>
@@ -224,9 +224,9 @@ const PaketHaji = () => {
                   Populer
                 </div>
               </div>
-              <CardTitle>Haji Reguler</CardTitle>
+              <CardTitle>Tour Reguler</CardTitle>
               <CardDescription>
-                Paket haji reguler dengan pelayanan terbaik
+                Paket Tour reguler dengan pelayanan terbaik
               </CardDescription>
             </CardHeader>
             <CardContent>
@@ -272,9 +272,9 @@ const PaketHaji = () => {
                   Populer
                 </div>
               </div>
-              <CardTitle>Haji Reguler</CardTitle>
+              <CardTitle>Tour Reguler</CardTitle>
               <CardDescription>
-                Paket haji reguler dengan pelayanan terbaik
+                Paket Tour reguler dengan pelayanan terbaik
               </CardDescription>
             </CardHeader>
             <CardContent>
@@ -320,9 +320,9 @@ const PaketHaji = () => {
                   Populer
                 </div>
               </div>
-              <CardTitle>Haji Reguler</CardTitle>
+              <CardTitle>Tour Reguler</CardTitle>
               <CardDescription>
-                Paket haji reguler dengan pelayanan terbaik
+                Paket Tour reguler dengan pelayanan terbaik
               </CardDescription>
             </CardHeader>
             <CardContent>
@@ -368,9 +368,9 @@ const PaketHaji = () => {
                   Populer
                 </div>
               </div>
-              <CardTitle>Haji Reguler</CardTitle>
+              <CardTitle>Tour Reguler</CardTitle>
               <CardDescription>
-                Paket haji reguler dengan pelayanan terbaik
+                Paket Tour reguler dengan pelayanan terbaik
               </CardDescription>
             </CardHeader>
             <CardContent>
@@ -409,4 +409,4 @@ const PaketHaji = () => {
   );
 };
 
-export default PaketHaji;
+export default PaketTour;
