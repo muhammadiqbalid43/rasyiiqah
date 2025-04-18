@@ -1,37 +1,50 @@
 import Layout from "@/components/layout";
 import { Button } from "@/components/ui/button";
 import { MapPin, User } from "lucide-react";
+import Image from "next/image";
 
 const branchOffices = [
   {
     cabang: "Curup",
     address: "Jl. Urip Sumoharjo No. 56, Makassar, Sulawesi Selatan 90232",
     owner: "Fadli Hidayatullah",
+    image:
+      "https://images.pexels.com/photos/1024248/pexels-photo-1024248.jpeg?auto=compress&cs=tinysrgb&w=600",
   },
   {
     cabang: "Curup",
     address: "Jl. Urip Sumoharjo No. 56, Makassar, Sulawesi Selatan 90232",
     owner: "Fadli Hidayatullah",
+    image:
+      "https://images.pexels.com/photos/1024248/pexels-photo-1024248.jpeg?auto=compress&cs=tinysrgb&w=600",
   },
   {
     cabang: "Curup",
     address: "Jl. Urip Sumoharjo No. 56, Makassar, Sulawesi Selatan 90232",
     owner: "Fadli Hidayatullah",
+    image:
+      "https://images.pexels.com/photos/1024248/pexels-photo-1024248.jpeg?auto=compress&cs=tinysrgb&w=600",
   },
   {
     cabang: "Curup",
     address: "Jl. Urip Sumoharjo No. 56, Makassar, Sulawesi Selatan 90232",
     owner: "Fadli Hidayatullah",
+    image:
+      "https://images.pexels.com/photos/1024248/pexels-photo-1024248.jpeg?auto=compress&cs=tinysrgb&w=600",
   },
   {
     cabang: "Curup",
     address: "Jl. Urip Sumoharjo No. 56, Makassar, Sulawesi Selatan 90232",
     owner: "Fadli Hidayatullah",
+    image:
+      "https://images.pexels.com/photos/1024248/pexels-photo-1024248.jpeg?auto=compress&cs=tinysrgb&w=600",
   },
   {
     cabang: "Curup",
     address: "Jl. Urip Sumoharjo No. 56, Makassar, Sulawesi Selatan 90232",
     owner: "Fadli Hidayatullah",
+    image:
+      "https://images.pexels.com/photos/1024248/pexels-photo-1024248.jpeg?auto=compress&cs=tinysrgb&w=600",
   },
 ];
 
@@ -52,18 +65,18 @@ const KantorCabangPage = () => {
           {branchOffices.map((office, index) => (
             <div
               key={index}
-              className="flex h-[430px] md:h-[270px] rounded-2xl md:rounded-r-2xl border-[1px] flex-col overflow-hidden bg-white  shadow-md w-[360px] md:w-[400px]  md:flex-row"
+              className="flex h-[430px] md:h-[270px]  md:rounded-r-2xl border-[1px] flex-col overflow-hidden bg-white  shadow-md w-[360px] md:w-[400px]  md:flex-row"
             >
               <div className="relative h-64 md:w-1/3 md:h-auto">
-                {/* <Image
-                  src={office.image || "/placeholder.svg"}
-                  alt={office.name}
+                <Image
+                  src={office.image}
+                  alt={office.owner}
                   fill
-                  className="object-cover"
-                /> */}
-                <div className="w-full h-[220px] md:h-[272px] md:w-[170px] bg-gray-500 "></div>
+                  className="object-cover md:w-[170px]"
+                />
+                {/* <div className="w-full h-[220px] md:h-[272px] md:w-[170px] bg-gray-500 "></div> */}
               </div>
-              <div className="p-4 md:p-6 md:ml-10 md:w-2/3">
+              <div className="p-4 md:p-6 md:w-2/3">
                 <h2 className="mb-2 text-2xl font-bold text-green-800">
                   {office.cabang}
                 </h2>
