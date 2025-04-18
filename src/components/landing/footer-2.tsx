@@ -1,5 +1,5 @@
+import { Facebook, Instagram } from "lucide-react";
 import Link from "next/link";
-import { Button } from "../ui/button";
 
 const Footer2 = () => {
   return (
@@ -7,8 +7,9 @@ const Footer2 = () => {
       <div className="container px-4 mx-auto">
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
           <div>
-            <h3 className="mb-4 text-lg font-bold text-white">Tentang Kami</h3>
-            <p className="mb-4 text-sm">
+            {/* <h3 className="mb-4 text-lg font-bold text-white">Tentang Kami</h3> */}
+            <img src="/logo-travel.jpg" className="w-[50px]" alt="logo" />
+            <p className="mt-3 mb-4 text-sm">
               Layanan umroh terpercaya dengan pengalaman lebih dari 10 tahun
               melayani jamaah Indonesia.
             </p>
@@ -102,21 +103,19 @@ const Footer2 = () => {
             </ul>
           </div>
           <div>
-            <h3 className="mb-4 text-lg font-bold text-white">Newsletter</h3>
-            <p className="mb-4 text-sm">
-              Dapatkan informasi terbaru tentang promo dan paket umroh kami
-            </p>
-            <form className="space-y-2">
-              <input
-                type="email"
-                placeholder="Email Anda"
-                className="w-full px-4 py-2 text-sm text-white placeholder-gray-400 bg-gray-800 border border-gray-700 rounded-md focus:border-primary focus:outline-none"
-                required
-              />
-              <Button type="submit" className="w-full">
-                Berlangganan
-              </Button>
-            </form>
+            <h3 className="mb-4 text-lg font-bold text-white">Media Sosial</h3>
+
+            <ul className="space-y-2 text-sm">
+              <li className="flex items-start gap-2">
+                <Facebook />
+                <span>rasyiiqah</span>
+              </li>
+
+              <li className="flex items-start gap-2">
+                <Instagram />
+                <span>rasyiiqah</span>
+              </li>
+            </ul>
           </div>
         </div>
         <div>

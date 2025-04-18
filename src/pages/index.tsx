@@ -1,3 +1,4 @@
+import FloatingWhatsapp from "@/components/floating-whatsapp";
 import Banner from "@/components/landing/banner";
 import Cta from "@/components/landing/cta";
 import Footer2 from "@/components/landing/footer-2";
@@ -14,6 +15,10 @@ export default function Home() {
   return (
     <div>
       <Header />
+      <FloatingWhatsapp
+        phoneNumber="+6281234567890"
+        message="Hello, I have a question about your services."
+      />
       <Banner />
       <ProdukKategori />
       <Offer />
