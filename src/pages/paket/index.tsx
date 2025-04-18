@@ -9,15 +9,7 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import {
-  CalendarIcon,
-  Clock,
-  Mail,
-  MapPinIcon,
-  Phone,
-  Star,
-  Users,
-} from "lucide-react";
+import { CalendarIcon, Clock, MapPinIcon, Star, Users } from "lucide-react";
 
 const PaketPage = () => {
   return (
@@ -530,119 +522,6 @@ const PaketPage = () => {
                 </p>
               </CardContent>
             </Card>
-          </div>
-        </div>
-      </section>
-
-      {/* CTA Section */}
-      <section className="container py-16 mx-auto">
-        <div className="p-8 bg-green-50 rounded-xl md:p-12">
-          <div className="grid items-center gap-8 md:grid-cols-2">
-            <div>
-              <h2 className="mb-4 text-3xl font-bold text-green-800">
-                Siap Berangkat Ibadah?
-              </h2>
-              <p className="mb-6 text-green-700">
-                Konsultasikan kebutuhan perjalanan ibadah Anda dengan tim kami.
-                Dapatkan penawaran terbaik dan jadwal keberangkatan yang sesuai.
-              </p>
-              <div className="space-y-4">
-                <div className="flex items-center">
-                  <Phone className="w-5 h-5 mr-3 text-green-600" />
-                  <span>+62 812 3456 7890</span>
-                </div>
-                <div className="flex items-center">
-                  <Mail className="w-5 h-5 mr-3 text-green-600" />
-                  <span>info@alamintravel.com</span>
-                </div>
-                <div className="flex items-center">
-                  <MapPinIcon className="w-5 h-5 mr-3 text-green-600" />
-                  <span>Jl. Ahmad Yani No. 123, Jakarta</span>
-                </div>
-              </div>
-            </div>
-            <div className="p-6 bg-white rounded-lg shadow-md">
-              <h3 className="mb-4 text-xl font-bold text-center">
-                Konsultasi Gratis
-              </h3>
-              <form className="space-y-4">
-                <div className="grid grid-cols-1 gap-4">
-                  <div>
-                    <label
-                      htmlFor="name"
-                      className="block mb-1 text-sm font-medium"
-                    >
-                      Nama Lengkap
-                    </label>
-                    <input
-                      id="name"
-                      className="w-full p-2 border rounded-md"
-                      placeholder="Masukkan nama lengkap"
-                    />
-                  </div>
-                  <div>
-                    <label
-                      htmlFor="phone"
-                      className="block mb-1 text-sm font-medium"
-                    >
-                      Nomor Telepon
-                    </label>
-                    <input
-                      id="phone"
-                      className="w-full p-2 border rounded-md"
-                      placeholder="Masukkan nomor telepon"
-                    />
-                  </div>
-                  <div>
-                    <label
-                      htmlFor="email"
-                      className="block mb-1 text-sm font-medium"
-                    >
-                      Email
-                    </label>
-                    <input
-                      id="email"
-                      className="w-full p-2 border rounded-md"
-                      placeholder="Masukkan email"
-                    />
-                  </div>
-                  <div>
-                    <label
-                      htmlFor="package"
-                      className="block mb-1 text-sm font-medium"
-                    >
-                      Paket yang Diminati
-                    </label>
-                    <select
-                      id="package"
-                      className="w-full p-2 border rounded-md"
-                    >
-                      <option value="">Pilih Paket</option>
-                      <option value="haji">Haji</option>
-                      <option value="umroh">Umroh</option>
-                      <option value="tour">Tour</option>
-                    </select>
-                  </div>
-                  <div>
-                    <label
-                      htmlFor="message"
-                      className="block mb-1 text-sm font-medium"
-                    >
-                      Pesan
-                    </label>
-                    <textarea
-                      id="message"
-                      rows={3}
-                      className="w-full p-2 border rounded-md"
-                      placeholder="Tulis pesan atau pertanyaan Anda"
-                    ></textarea>
-                  </div>
-                </div>
-                <Button className="w-full bg-green-600 hover:bg-green-700">
-                  Kirim Pesan
-                </Button>
-              </form>
-            </div>
           </div>
         </div>
       </section>

@@ -1,17 +1,6 @@
 import Layout from "@/components/layout";
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
-import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardFooter,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
-import { CalendarIcon, Clock, Share2, User } from "lucide-react";
-import Link from "next/link";
+
+import { CalendarIcon } from "lucide-react";
 
 const BlogDetail = () => {
   return (
@@ -19,23 +8,8 @@ const BlogDetail = () => {
       <Layout>
         <main className="container px-4 py-8 mx-auto">
           <div className="max-w-4xl mx-auto">
-            {/* Breadcrumbs */}
-            <div className="mb-6 text-sm text-gray-500">
-              <Link href="/" className="hover:text-green-700">
-                Home
-              </Link>{" "}
-              &gt;{" "}
-              <Link href="#" className="hover:text-green-700">
-                Stories
-              </Link>{" "}
-              &gt; <span className="text-gray-700">Perjalanan Umroh</span>
-            </div>
-
             {/* Blog Header */}
             <div className="mb-8">
-              <Badge className="mb-4 text-green-800 bg-green-100 hover:bg-green-200">
-                Umrah Experience
-              </Badge>
               <h1 className="mb-4 text-3xl font-bold text-gray-900 md:text-4xl">
                 Perjalanan ke Tanah Suci: Pengalaman Umrah Transformatif Saya
               </h1>
@@ -43,15 +17,7 @@ const BlogDetail = () => {
               <div className="flex items-center mb-6 space-x-4 text-gray-600">
                 <div className="flex items-center">
                   <CalendarIcon className="w-4 h-4 mr-1" />
-                  <span>April 12, 2023</span>
-                </div>
-                <div className="flex items-center">
-                  <Clock className="w-4 h-4 mr-1" />
-                  <span>8 min read</span>
-                </div>
-                <div className="flex items-center">
-                  <User className="w-4 h-4 mr-1" />
-                  <span>Muhammad Iqbal</span>
+                  <span>April 12, 2023 - 20.49 WIB</span>
                 </div>
               </div>
             </div>
@@ -59,27 +25,6 @@ const BlogDetail = () => {
             {/* Featured Image */}
             <div className="relative w-full h-[400px] rounded-xl overflow-hidden mb-8">
               <div className="bg-gray-400 w-[800px] h-[1200px] rounded-xl"></div>
-            </div>
-
-            {/* Author Card */}
-            <div className="flex items-center p-4 mb-8 space-x-4 rounded-lg bg-gray-50">
-              <Avatar className="w-12 h-12 border-2 border-green-500">
-                <AvatarImage
-                  src="/placeholder.svg?height=100&width=100"
-                  alt="Ahmad Fauzi"
-                />
-                <AvatarFallback>AF</AvatarFallback>
-              </Avatar>
-              <div>
-                <p className="font-medium text-gray-900">Muhammad Iqbal</p>
-                <p className="text-sm text-gray-500">
-                  Travel Writer & Umrah Guide
-                </p>
-              </div>
-              <Button variant="outline" size="sm" className="ml-auto">
-                <Share2 className="w-4 h-4 mr-2" />
-                Share
-              </Button>
             </div>
 
             {/* Blog Content */}
@@ -244,174 +189,6 @@ const BlogDetail = () => {
                 this transformative experience and look forward to returning
                 again, inshaAllah.
               </p>
-            </div>
-
-            {/* Package Highlight */}
-            <Card className="mb-12 border-green-200 bg-green-50">
-              <CardHeader className="pb-2">
-                <CardTitle className="text-green-800">
-                  Premium Umrah Package
-                </CardTitle>
-                <CardDescription>
-                  Experience the same journey with our premium 12-day package
-                </CardDescription>
-              </CardHeader>
-              <CardContent>
-                <ul className="grid grid-cols-1 gap-2 mb-4 md:grid-cols-2">
-                  <li className="flex items-center">
-                    <div className="w-2 h-2 mr-2 bg-green-500 rounded-full"></div>
-                    5-star hotels near Haram
-                  </li>
-                  <li className="flex items-center">
-                    <div className="w-2 h-2 mr-2 bg-green-500 rounded-full"></div>
-                    Direct flights with premium airlines
-                  </li>
-                  <li className="flex items-center">
-                    <div className="w-2 h-2 mr-2 bg-green-500 rounded-full"></div>
-                    Experienced scholars as guides
-                  </li>
-                  <li className="flex items-center">
-                    <div className="w-2 h-2 mr-2 bg-green-500 rounded-full"></div>
-                    Ziarah to all historical sites
-                  </li>
-                  <li className="flex items-center">
-                    <div className="w-2 h-2 mr-2 bg-green-500 rounded-full"></div>
-                    All-inclusive meals
-                  </li>
-                  <li className="flex items-center">
-                    <div className="w-2 h-2 mr-2 bg-green-500 rounded-full"></div>
-                    VIP transportation
-                  </li>
-                </ul>
-                <div className="flex items-center justify-between">
-                  <div>
-                    <span className="text-3xl font-bold text-green-800">
-                      RP. 42.000.000
-                    </span>
-                    <span className="text-gray-500"> / person</span>
-                  </div>
-                  <Button className="bg-green-700 hover:bg-green-800">
-                    View Package
-                  </Button>
-                </div>
-              </CardContent>
-            </Card>
-
-            {/* Related Stories */}
-            <div className="mb-12">
-              <h3 className="mb-6 text-2xl font-bold text-gray-900">
-                Related Stories
-              </h3>
-              <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
-                {[1, 2, 3].map((item) => (
-                  <Card
-                    key={item}
-                    className="overflow-hidden transition-shadow hover:shadow-md"
-                  >
-                    <div className="relative h-48">
-                      {/* <Image
-                        src={`/placeholder.svg?height=400&width=600`}
-                        alt="Related story"
-                        fill
-                        className="object-cover"
-                      /> */}
-
-                      <div className="h-[200px] w-[600px] bg-gray-400"></div>
-                    </div>
-                    <CardHeader className="pb-2">
-                      <Badge className="mb-2 text-green-800 bg-green-100 hover:bg-green-200 w-fit">
-                        Umrah
-                      </Badge>
-                      <CardTitle className="text-lg">
-                        First-Time Umrah: A Family Journey
-                      </CardTitle>
-                    </CardHeader>
-                    <CardContent className="pb-2">
-                      <p className="text-sm text-gray-600 line-clamp-2">
-                        Our family of five embarked on our first Umrah journey
-                        together, creating memories that will last a lifetime...
-                      </p>
-                    </CardContent>
-                    <CardFooter className="pt-0">
-                      <div className="flex items-center text-sm text-gray-500">
-                        <CalendarIcon className="w-3 h-3 mr-1" />
-                        <span>March 15, 2023</span>
-                      </div>
-                    </CardFooter>
-                  </Card>
-                ))}
-              </div>
-            </div>
-
-            {/* CTA Section */}
-            <div className="p-8 mb-12 text-center text-white bg-green-800 rounded-xl">
-              <h3 className="mb-4 text-2xl font-bold">
-                Siap untuk Perjalanan Spiritual Anda?
-              </h3>
-              <p className="max-w-2xl mx-auto mb-6">
-                Biarkan kami memandu Anda menjalani pengalaman umrah yang
-                transformatif dengan paket yang disesuaikan dengan kebutuhan dan
-                preferensi Anda.
-              </p>
-              <div className="flex flex-col justify-center gap-4 sm:flex-row">
-                <Button className="text-green-800 bg-white hover:bg-green-100">
-                  Lihat Semua Paket
-                </Button>
-                <Button
-                  variant="outline"
-                  className="text-black border-white hover:bg-green-700"
-                >
-                  Contact a Consultant
-                </Button>
-              </div>
-            </div>
-
-            {/* Comments Section */}
-            <div>
-              <div className="flex items-center justify-between mb-6">
-                <h3 className="text-2xl font-bold text-gray-900">
-                  Komentar (12)
-                </h3>
-                <Button variant="outline">Add Your Story</Button>
-              </div>
-
-              <div className="space-y-6">
-                {[1, 2].map((item) => (
-                  <div key={item} className="pb-6 border-b">
-                    <div className="flex items-start space-x-4">
-                      <Avatar>
-                        <AvatarImage
-                          src="/placeholder.svg?height=100&width=100"
-                          alt="User"
-                        />
-                        <AvatarFallback>UN</AvatarFallback>
-                      </Avatar>
-                      <div className="flex-1">
-                        <div className="flex items-center justify-between mb-1">
-                          <h4 className="font-medium">Fatima Zahra</h4>
-                          <span className="text-sm text-gray-500">
-                            2 days ago
-                          </span>
-                        </div>
-                        <p className="mb-3 text-gray-600">
-                          MasyaAllah, kisahmu membuatku meneteskan air mata. Aku
-                          berencana untuk melakukan umrah pertamaku bulan depan
-                          dan kisah terperincimu telah membantuku mempersiapkan
-                          diri secara mental dan spiritual. Terima kasih telah
-                          berbagi!
-                        </p>
-                        <Button
-                          variant="ghost"
-                          size="sm"
-                          className="-ml-2 text-green-700 hover:text-green-800 hover:bg-green-50"
-                        >
-                          Balas
-                        </Button>
-                      </div>
-                    </div>
-                  </div>
-                ))}
-              </div>
             </div>
           </div>
         </main>

@@ -1,6 +1,5 @@
 import Layout from "@/components/layout";
 import { Button } from "@/components/ui/button";
-import { Card } from "@/components/ui/card";
 import { MapPin, User } from "lucide-react";
 
 const branchOffices = [
@@ -51,9 +50,9 @@ const KantorCabangPage = () => {
         </div>
         <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
           {branchOffices.map((office, index) => (
-            <Card
+            <div
               key={index}
-              className="flex h-[430px] md:h-[400px]  flex-col overflow-hidden bg-white rounded-lg shadow-md w-[360px] md:w-[400px]  md:flex-row"
+              className="flex h-[430px] md:h-[270px] rounded-2xl md:rounded-r-2xl border-[1px] flex-col overflow-hidden bg-white  shadow-md w-[360px] md:w-[400px]  md:flex-row"
             >
               <div className="relative h-64 md:w-1/3 md:h-auto">
                 {/* <Image
@@ -62,7 +61,7 @@ const KantorCabangPage = () => {
                   fill
                   className="object-cover"
                 /> */}
-                <div className="w-full h-[220px] md:h-[272px] md:w-[170px] bg-gray-500 rounded"></div>
+                <div className="w-full h-[220px] md:h-[272px] md:w-[170px] bg-gray-500 "></div>
               </div>
               <div className="p-4 md:p-6 md:ml-10 md:w-2/3">
                 <h2 className="mb-2 text-2xl font-bold text-green-800">
@@ -84,7 +83,7 @@ const KantorCabangPage = () => {
                   <Button>Maps</Button>
                 </div>
               </div>
-            </Card>
+            </div>
           ))}
         </div>
       </div>
