@@ -8,13 +8,14 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { CalendarIcon, ChevronRightIcon } from "lucide-react";
+import Image from "next/image";
 
 const BlogPage = () => {
   return (
     <>
       <Layout>
         <main>
-          <section className="w-full py-8  h-[250px]">
+          <section className="w-full py-8  h-[220px]">
             <div className="container px-4 mx-auto md:px-6">
               <div className="mb-12 ">
                 <h1 className="text-3xl font-bold tracking-tight text-green-600 sm:text-4xl md:text-5xl">
@@ -33,7 +34,13 @@ const BlogPage = () => {
               <div className="grid items-start grid-cols-1 py-12 mx-auto gap-y-10 md:gap-6 md:grid-cols-3 ">
                 <Card className="overflow-hidden w-[350px]">
                   <div>
-                    <div className="bg-gray-400 w-[600px] h-[200px] md:h-[250px]"></div>
+                    <Image
+                      src="https://images.pexels.com/photos/31565687/pexels-photo-31565687/free-photo-of-view-of-abraj-al-bait-towers-in-mecca-saudi-arabia.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                      alt="galeri image"
+                      width={360}
+                      height={272}
+                      className="object-cover rounded-t-xl "
+                    />
                   </div>
                   <CardHeader>
                     <div className="flex items-center gap-2 text-sm text-gray-500">
@@ -57,7 +64,13 @@ const BlogPage = () => {
                 </Card>
                 <Card className="overflow-hidden w-[350px]">
                   <div>
-                    <div className="bg-gray-400 w-[600px] h-[200px] md:h-[250px]"></div>
+                    <Image
+                      src="https://images.pexels.com/photos/31565687/pexels-photo-31565687/free-photo-of-view-of-abraj-al-bait-towers-in-mecca-saudi-arabia.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                      alt="galeri image"
+                      width={360}
+                      height={272}
+                      className="object-cover rounded-t-xl "
+                    />
                   </div>
                   <CardHeader>
                     <div className="flex items-center gap-2 text-sm text-gray-500">
@@ -81,7 +94,13 @@ const BlogPage = () => {
                 </Card>
                 <Card className="overflow-hidden w-[350px]">
                   <div>
-                    <div className="bg-gray-400 w-[600px] h-[200px] md:h-[250px]"></div>
+                    <Image
+                      src="https://images.pexels.com/photos/31565687/pexels-photo-31565687/free-photo-of-view-of-abraj-al-bait-towers-in-mecca-saudi-arabia.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                      alt="galeri image"
+                      width={360}
+                      height={272}
+                      className="object-cover rounded-t-xl "
+                    />
                   </div>
                   <CardHeader>
                     <div className="flex items-center gap-2 text-sm text-gray-500">
@@ -105,7 +124,13 @@ const BlogPage = () => {
                 </Card>
                 <Card className="overflow-hidden w-[350px]">
                   <div>
-                    <div className="bg-gray-400 w-[600px] h-[200px] md:h-[250px]"></div>
+                    <Image
+                      src="https://images.pexels.com/photos/31565687/pexels-photo-31565687/free-photo-of-view-of-abraj-al-bait-towers-in-mecca-saudi-arabia.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                      alt="galeri image"
+                      width={360}
+                      height={272}
+                      className="object-cover rounded-t-xl "
+                    />
                   </div>
                   <CardHeader>
                     <div className="flex items-center gap-2 text-sm text-gray-500">
@@ -129,7 +154,13 @@ const BlogPage = () => {
                 </Card>
                 <Card className="overflow-hidden w-[350px]">
                   <div>
-                    <div className="bg-gray-400 w-[600px] h-[200px] md:h-[250px]"></div>
+                    <Image
+                      src="https://images.pexels.com/photos/31565687/pexels-photo-31565687/free-photo-of-view-of-abraj-al-bait-towers-in-mecca-saudi-arabia.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                      alt="galeri image"
+                      width={360}
+                      height={272}
+                      className="object-cover rounded-t-xl "
+                    />
                   </div>
                   <CardHeader>
                     <div className="flex items-center gap-2 text-sm text-gray-500">
@@ -153,7 +184,13 @@ const BlogPage = () => {
                 </Card>
                 <Card className="overflow-hidden w-[350px]">
                   <div>
-                    <div className="bg-gray-400 w-[600px] h-[200px] md:h-[250px]"></div>
+                    <Image
+                      src="https://images.pexels.com/photos/31565687/pexels-photo-31565687/free-photo-of-view-of-abraj-al-bait-towers-in-mecca-saudi-arabia.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                      alt="galeri image"
+                      width={360}
+                      height={272}
+                      className="object-cover rounded-t-xl "
+                    />
                   </div>
                   <CardHeader>
                     <div className="flex items-center gap-2 text-sm text-gray-500">
