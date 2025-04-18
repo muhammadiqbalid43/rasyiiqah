@@ -8,7 +8,6 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { CalendarIcon, ChevronRightIcon } from "lucide-react";
-import Image from "next/image";
 
 const BlogPage = () => {
   return (
@@ -32,14 +31,12 @@ const BlogPage = () => {
           <section className="w-full ">
             <div className="container px-4 mx-auto md:px-6">
               <div className="grid items-start grid-cols-1 py-12 mx-auto gap-y-10 md:gap-6 md:grid-cols-3 ">
-                <Card className="overflow-hidden w-[350px]">
+                <Card className="overflow-hidden w-[360px]">
                   <div>
-                    <Image
+                    <img
                       src="https://images.pexels.com/photos/31565687/pexels-photo-31565687/free-photo-of-view-of-abraj-al-bait-towers-in-mecca-saudi-arabia.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                       alt="galeri image"
-                      width={360}
-                      height={272}
-                      className="object-cover rounded-t-xl "
+                      className="object-cover w-full h-[272px] rounded-t-xl "
                     />
                   </div>
                   <CardHeader>
@@ -62,14 +59,12 @@ const BlogPage = () => {
                     </Button>
                   </CardFooter>
                 </Card>
-                <Card className="overflow-hidden w-[350px]">
+                <Card className="overflow-hidden w-[360px]">
                   <div>
-                    <Image
+                    <img
                       src="https://images.pexels.com/photos/31565687/pexels-photo-31565687/free-photo-of-view-of-abraj-al-bait-towers-in-mecca-saudi-arabia.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                       alt="galeri image"
-                      width={360}
-                      height={272}
-                      className="object-cover rounded-t-xl "
+                      className="object-cover w-full h-[272px] rounded-t-xl "
                     />
                   </div>
                   <CardHeader>
@@ -92,14 +87,12 @@ const BlogPage = () => {
                     </Button>
                   </CardFooter>
                 </Card>
-                <Card className="overflow-hidden w-[350px]">
+                <Card className="overflow-hidden w-[360px]">
                   <div>
-                    <Image
+                    <img
                       src="https://images.pexels.com/photos/31565687/pexels-photo-31565687/free-photo-of-view-of-abraj-al-bait-towers-in-mecca-saudi-arabia.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                       alt="galeri image"
-                      width={360}
-                      height={272}
-                      className="object-cover rounded-t-xl "
+                      className="object-cover w-full h-[272px] rounded-t-xl "
                     />
                   </div>
                   <CardHeader>
@@ -122,14 +115,12 @@ const BlogPage = () => {
                     </Button>
                   </CardFooter>
                 </Card>
-                <Card className="overflow-hidden w-[350px]">
+                <Card className="overflow-hidden w-[360px]">
                   <div>
-                    <Image
+                    <img
                       src="https://images.pexels.com/photos/31565687/pexels-photo-31565687/free-photo-of-view-of-abraj-al-bait-towers-in-mecca-saudi-arabia.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                       alt="galeri image"
-                      width={360}
-                      height={272}
-                      className="object-cover rounded-t-xl "
+                      className="object-cover w-full h-[272px] rounded-t-xl "
                     />
                   </div>
                   <CardHeader>
@@ -152,14 +143,12 @@ const BlogPage = () => {
                     </Button>
                   </CardFooter>
                 </Card>
-                <Card className="overflow-hidden w-[350px]">
+                <Card className="overflow-hidden w-[360px]">
                   <div>
-                    <Image
+                    <img
                       src="https://images.pexels.com/photos/31565687/pexels-photo-31565687/free-photo-of-view-of-abraj-al-bait-towers-in-mecca-saudi-arabia.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                       alt="galeri image"
-                      width={360}
-                      height={272}
-                      className="object-cover rounded-t-xl "
+                      className="object-cover w-full h-[272px] rounded-t-xl "
                     />
                   </div>
                   <CardHeader>
@@ -182,14 +171,12 @@ const BlogPage = () => {
                     </Button>
                   </CardFooter>
                 </Card>
-                <Card className="overflow-hidden w-[350px]">
+                <Card className="overflow-hidden w-[360px]">
                   <div>
-                    <Image
+                    <img
                       src="https://images.pexels.com/photos/31565687/pexels-photo-31565687/free-photo-of-view-of-abraj-al-bait-towers-in-mecca-saudi-arabia.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                       alt="galeri image"
-                      width={360}
-                      height={272}
-                      className="object-cover rounded-t-xl "
+                      className="object-cover w-full h-[272px] rounded-t-xl "
                     />
                   </div>
                   <CardHeader>
