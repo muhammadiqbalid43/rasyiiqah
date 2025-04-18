@@ -24,7 +24,11 @@ const BlogDetail = () => {
 
             {/* Featured Image */}
             <div className="relative w-full h-[400px] rounded-xl overflow-hidden mb-8">
-              <div className="bg-gray-400 w-[800px] h-[1200px] rounded-xl"></div>
+              <img
+                src="https://images.pexels.com/photos/31565687/pexels-photo-31565687/free-photo-of-view-of-abraj-al-bait-towers-in-mecca-saudi-arabia.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                alt="galeri image"
+                className="object-cover w-full h-[1200px] rounded-t-xl "
+              />
             </div>
 
             {/* Blog Content */}
@@ -58,22 +62,18 @@ const BlogDetail = () => {
 
               <div className="grid grid-cols-2 gap-4 my-8">
                 <div className="relative overflow-hidden rounded-lg h-60">
-                  {/* <Image
-                    src="/placeholder.svg?height=600&width=800"
-                    alt="Departure from airport"
-                    fill
-                    className="object-cover"
-                  /> */}
-                  <div className="h-[600px] w-[800px] bg-gray-400"></div>
+                  <img
+                    src="https://images.pexels.com/photos/31565687/pexels-photo-31565687/free-photo-of-view-of-abraj-al-bait-towers-in-mecca-saudi-arabia.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                    alt="galeri image"
+                    className="object-cover w-full h-[600px] rounded-t-xl "
+                  />
                 </div>
                 <div className="relative overflow-hidden rounded-lg h-60">
-                  {/* <Image
-                    src="/placeholder.svg?height=600&width=800"
-                    alt="Group photo before departure"
-                    fill
-                    className="object-cover"
-                  /> */}
-                  <div className="h-[600px] w-[800px] bg-gray-400"></div>
+                  <img
+                    src="https://images.pexels.com/photos/31565687/pexels-photo-31565687/free-photo-of-view-of-abraj-al-bait-towers-in-mecca-saudi-arabia.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                    alt="galeri image"
+                    className="object-cover w-full h-[600px] rounded-t-xl "
+                  />
                 </div>
               </div>
 
@@ -96,13 +96,11 @@ const BlogDetail = () => {
               </p>
 
               <div className="relative w-full h-[300px] rounded-xl overflow-hidden my-8">
-                {/* <Image
-                  src="/placeholder.svg?height=800&width=1200"
-                  alt="Masjid Nabawi"
-                  fill
-                  className="object-cover"
-                /> */}
-                <div className="h-[800px] w-[1200px] bg-gray-400"></div>
+                <img
+                  src="https://images.pexels.com/photos/31565687/pexels-photo-31565687/free-photo-of-view-of-abraj-al-bait-towers-in-mecca-saudi-arabia.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                  alt="galeri image"
+                  className="object-cover w-full h-[800px] rounded-t-xl "
+                />
               </div>
 
               <h2 className="mt-8 mb-4 text-2xl font-bold text-gray-900">
