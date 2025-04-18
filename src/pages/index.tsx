@@ -15,8 +15,8 @@ export default function Home() {
     <div>
       <Header />
       <Banner />
-      <Offer />
       <ProdukKategori />
+      <Offer />
       <Testimoni />
       <JadwalKeberangkatan />
       <PaketUmroh />

@@ -1,226 +1,192 @@
-import { ArrowRight, Calendar, MapPin, Users } from "lucide-react";
-import { Card, CardContent } from "../ui/card";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "../ui/tabs";
-import { Button } from "../ui/button";
-
-const umrohPackages = [
-  {
-    title: "Umroh Reguler",
-    price: "Rp 25.000.000",
-    duration: "9 Hari",
-    location: "Makkah & Madinah",
-    group: "Grup 45 Jamaah",
-    image: "/placeholder.svg?height=300&width=400",
-  },
-  {
-    title: "Umroh Plus Turki",
-    price: "Rp 35.000.000",
-    duration: "12 Hari",
-    location: "Makkah, Madinah & Istanbul",
-    group: "Grup 30 Jamaah",
-    image: "/placeholder.svg?height=300&width=400",
-  },
-  {
-    title: "Umroh Ramadhan",
-    price: "Rp 30.000.000",
-    duration: "10 Hari",
-    location: "Makkah & Madinah",
-    group: "Grup 40 Jamaah",
-    image: "/placeholder.svg?height=300&width=400",
-  },
-];
-
-const hajiPackages = [
-  {
-    title: "Haji Reguler",
-    price: "Rp 150.000.000",
-    duration: "40 Hari",
-    location: "Makkah & Madinah",
-    group: "Grup 45 Jamaah",
-    image: "/placeholder.svg?height=300&width=400",
-  },
-  {
-    title: "Haji Plus",
-    price: "Rp 200.000.000",
-    duration: "25 Hari",
-    location: "Makkah & Madinah",
-    group: "Grup 25 Jamaah",
-    image: "/placeholder.svg?height=300&width=400",
-  },
-  {
-    title: "Haji Furoda",
-    price: "Rp 250.000.000",
-    duration: "20 Hari",
-    location: "Makkah & Madinah",
-    group: "Grup 15 Jamaah",
-    image: "/placeholder.svg?height=300&width=400",
-  },
-];
-
-const travelPackages = [
-  {
-    title: "Tour Turki",
-    price: "Rp 20.000.000",
-    duration: "8 Hari",
-    location: "Istanbul, Bursa, Cappadocia",
-    group: "Grup 20 Jamaah",
-    image: "/placeholder.svg?height=300&width=400",
-  },
-  {
-    title: "Tour Aqsa & Yordania",
-    price: "Rp 30.000.000",
-    duration: "10 Hari",
-    location: "Yerusalem, Amman, Petra",
-    group: "Grup 25 Jamaah",
-    image: "/placeholder.svg?height=300&width=400",
-  },
-  {
-    title: "Tour Dubai",
-    price: "Rp 18.000.000",
-    duration: "6 Hari",
-    location: "Dubai, Abu Dhabi",
-    group: "Grup 30 Jamaah",
-    image: "/placeholder.svg?height=300&width=400",
-  },
-];
+import Link from "next/link";
 
 const ProdukKategori = () => {
   return (
-    <section className="px-4 py-16 bg-white md:px-8">
-      <div className="container mx-auto">
-        <h2 className="mb-12 text-3xl font-bold text-center">Layanan Kami</h2>
-        <Tabs defaultValue="umroh" className="w-full">
-          <TabsList className="grid w-full grid-cols-3 mb-8">
-            <TabsTrigger value="umroh">Umroh</TabsTrigger>
-            <TabsTrigger value="haji">Haji</TabsTrigger>
-            <TabsTrigger value="travel">Travel</TabsTrigger>
-          </TabsList>
-          <TabsContent value="umroh">
-            <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
-              {umrohPackages.map((pkg, index) => (
-                <Card key={index} className="overflow-hidden">
-                  <div className="relative h-48">
-                    <div className="bg-gray-400 w-full h-[190px]"></div>
-                  </div>
-                  <CardContent className="p-6">
-                    <div className="flex items-start justify-between mb-4">
-                      <h3 className="text-xl font-semibold">{pkg.title}</h3>
-                      <span className="font-bold text-emerald-600">
-                        {pkg.price}
-                      </span>
-                    </div>
-                    <div className="mb-4 space-y-2">
-                      <div className="flex items-center text-sm text-gray-500">
-                        <Calendar className="w-4 h-4 mr-2" />
-                        <span>{pkg.duration}</span>
-                      </div>
-                      <div className="flex items-center text-sm text-gray-500">
-                        <MapPin className="w-4 h-4 mr-2" />
-                        <span>{pkg.location}</span>
-                      </div>
-                      <div className="flex items-center text-sm text-gray-500">
-                        <Users className="w-4 h-4 mr-2" />
-                        <span>{pkg.group}</span>
-                      </div>
-                    </div>
-                    <Button className="w-full bg-emerald-600 hover:bg-emerald-700">
-                      Lihat Detail
-                    </Button>
-                  </CardContent>
-                </Card>
-              ))}
-            </div>
-            <div className="flex justify-center mt-8">
-              <Button variant="outline" className="flex items-center">
-                Lihat Semua Paket Umroh <ArrowRight className="w-4 h-4 ml-2" />
-              </Button>
-            </div>
-          </TabsContent>
-          <TabsContent value="haji">
-            <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
-              {hajiPackages.map((pkg, index) => (
-                <Card key={index} className="overflow-hidden">
-                  <div className="relative h-48">
-                    <div className="bg-gray-400 w-full h-[190px]"></div>
-                  </div>
-                  <CardContent className="p-6">
-                    <div className="flex items-start justify-between mb-4">
-                      <h3 className="text-xl font-semibold">{pkg.title}</h3>
-                      <span className="font-bold text-emerald-600">
-                        {pkg.price}
-                      </span>
-                    </div>
-                    <div className="mb-4 space-y-2">
-                      <div className="flex items-center text-sm text-gray-500">
-                        <Calendar className="w-4 h-4 mr-2" />
-                        <span>{pkg.duration}</span>
-                      </div>
-                      <div className="flex items-center text-sm text-gray-500">
-                        <MapPin className="w-4 h-4 mr-2" />
-                        <span>{pkg.location}</span>
-                      </div>
-                      <div className="flex items-center text-sm text-gray-500">
-                        <Users className="w-4 h-4 mr-2" />
-                        <span>{pkg.group}</span>
-                      </div>
-                    </div>
-                    <Button className="w-full bg-emerald-600 hover:bg-emerald-700">
-                      Lihat Detail
-                    </Button>
-                  </CardContent>
-                </Card>
-              ))}
-            </div>
-            <div className="flex justify-center mt-8">
-              <Button variant="outline" className="flex items-center">
-                Lihat Semua Paket Haji <ArrowRight className="w-4 h-4 ml-2" />
-              </Button>
-            </div>
-          </TabsContent>
-          <TabsContent value="travel">
-            <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
-              {travelPackages.map((pkg, index) => (
-                <Card key={index} className="overflow-hidden">
-                  <div className="relative h-48">
-                    <div className="bg-gray-400 w-full h-[190px]"></div>
-                  </div>
-                  <CardContent className="p-6">
-                    <div className="flex items-start justify-between mb-4">
-                      <h3 className="text-xl font-semibold">{pkg.title}</h3>
-                      <span className="font-bold text-emerald-600">
-                        {pkg.price}
-                      </span>
-                    </div>
-                    <div className="mb-4 space-y-2">
-                      <div className="flex items-center text-sm text-gray-500">
-                        <Calendar className="w-4 h-4 mr-2" />
-                        <span>{pkg.duration}</span>
-                      </div>
-                      <div className="flex items-center text-sm text-gray-500">
-                        <MapPin className="w-4 h-4 mr-2" />
-                        <span>{pkg.location}</span>
-                      </div>
-                      <div className="flex items-center text-sm text-gray-500">
-                        <Users className="w-4 h-4 mr-2" />
-                        <span>{pkg.group}</span>
-                      </div>
-                    </div>
-                    <Button className="w-full bg-emerald-600 hover:bg-emerald-700">
-                      Lihat Detail
-                    </Button>
-                  </CardContent>
-                </Card>
-              ))}
-            </div>
-            <div className="flex justify-center mt-8">
-              <Button variant="outline" className="flex items-center">
-                Lihat Semua Paket Travel <ArrowRight className="w-4 h-4 ml-2" />
-              </Button>
-            </div>
-          </TabsContent>
-        </Tabs>
+    <div className="mt-24">
+      <div className="container mx-auto ">
+        <div className="grid grid-cols-2 md:grid-cols-6  w-[390px] md:w-full h-[380px] md:h-[150px] bg-gray-200 rounded-xl ">
+          <img
+            src="https://www.dwinstravel.com/wp-content/uploads/2024/07/005-Logo-PPIU-Sertified-768x457.webp"
+            alt="image"
+          />
+          <img
+            src="https://www.dwinstravel.com/wp-content/uploads/2024/07/006-Logo-Siskopatuh-768x457.webp"
+            alt="image-2"
+          />
+          <img
+            src="https://www.dwinstravel.com/wp-content/uploads/2024/07/001-Logo-5-Pasti-Umroh-768x457.webp"
+            alt="image-3"
+          />
+          <img
+            src="https://www.dwinstravel.com/wp-content/uploads/2024/07/002-Logo-Kemenag-768x457.webp"
+            alt="image-4"
+          />
+          <img
+            src="https://www.dwinstravel.com/wp-content/uploads/2024/07/003-Logo-Iata-768x457.webp"
+            alt="image-5"
+          />
+          <img
+            src="https://www.dwinstravel.com/wp-content/uploads/2024/07/004-Logo-Kan-768x457.webp"
+            alt="image-6"
+          />
+        </div>
       </div>
-    </section>
+      <div className="container grid grid-cols-1 gap-6 p-6 mx-auto mt-12 md:grid-cols-4">
+        {/* Left content  */}
+        <div className="p-6 bg-white rounded-lg">
+          <h2 className="mb-4 text-2xl font-bold text-green-800">
+            Layanan yang Berkelas, Teruji dan Terjangkau
+          </h2>
+          <p className="mb-6 text-gray-700">
+            Melayani dengan sepenuh hati kepada jamaah: mengutamakan layanan
+            yang berkelas, teruji dan terjangkau. Ini komitmen yang selalu kami
+            jaga untuk melayani jamaah ke tanah suci, karena itu adalah ibadah
+            yang baik harus diikuti dengan...
+          </p>
+          <Link
+            href="#"
+            className="flex items-center font-medium text-green-700"
+          >
+            Tentang kami
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              className="ml-1"
+            >
+              <path d="M5 12h14"></path>
+              <path d="m12 5 7 7-7 7"></path>
+            </svg>
+          </Link>
+        </div>
+
+        {/* Haji Khusus Card */}
+        <div className="relative overflow-hidden rounded-lg">
+          <img
+            src="https://images.pexels.com/photos/11667465/pexels-photo-11667465.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            alt="image"
+            className="object-cover w-full h-full -z-50"
+          />
+          <div className="absolute inset-0 bg-gradient-to-br from-green-700 to-green-900 opacity-90"></div>
+          <div className="absolute inset-0 flex flex-col justify-between p-6 text-white">
+            <div>
+              <h3 className="mb-1 text-xl font-bold">Haji Khusus</h3>
+              <p className="text-sm opacity-90">Layanan Haji Khusus</p>
+            </div>
+            <div className="flex items-end justify-between">
+              <Link href="#" className="flex items-center text-sm text-white">
+                Selengkapnya
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  className="ml-1"
+                >
+                  <path d="M5 12h14"></path>
+                  <path d="m12 5 7 7-7 7"></path>
+                </svg>
+              </Link>
+            </div>
+          </div>
+        </div>
+
+        {/* Umrah Card */}
+        <div className="relative overflow-hidden rounded-lg">
+          <img
+            src="https://images.pexels.com/photos/31565687/pexels-photo-31565687/free-photo-of-view-of-abraj-al-bait-towers-in-mecca-saudi-arabia.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            alt="image"
+            className="object-cover w-full h-full -z-50"
+          />
+          <div className="absolute inset-0 bg-gradient-to-br from-green-700 to-green-900 opacity-90"></div>
+          <div className="absolute inset-0 flex flex-col justify-between p-6 text-white">
+            <div>
+              <h3 className="mb-1 text-xl font-bold">UMRAH</h3>
+              <p className="text-sm opacity-90">Layanan Umrah</p>
+            </div>
+            <div className="flex items-end justify-between">
+              <Link href="#" className="flex items-center text-sm text-white">
+                Selengkapnya
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  className="ml-1"
+                >
+                  <path d="M5 12h14"></path>
+                  <path d="m12 5 7 7-7 7"></path>
+                </svg>
+              </Link>
+            </div>
+          </div>
+        </div>
+
+        {/* Tour Card */}
+        <div className="relative overflow-hidden rounded-lg">
+          <img
+            src="https://images.pexels.com/photos/11667465/pexels-photo-11667465.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            alt="image"
+            className="object-cover w-full h-full -z-50"
+          />
+          <div className="absolute inset-0 bg-gradient-to-br from-green-700 to-green-900 opacity-90"></div>
+          <div className="absolute inset-0 flex flex-col justify-between p-6 text-white">
+            <div>
+              <h3 className="mb-1 text-xl font-bold">Tour</h3>
+              <p className="text-sm opacity-90">Layanan Tour</p>
+            </div>
+            <div className="flex items-end justify-between">
+              <div className="opacity-30">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="80"
+                  height="80"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  className="opacity-30"
+                >
+                  <path d="M2 20h20v4H2v-4zm2-8h2v7H4v-7zm5 0h2v7H9v-7zm4 0h2v7h-2v-7zm5 0h2v7h-2v-7zM2 7l10-5 10 5v4H2V7zm10 1c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path>
+                </svg>
+              </div>
+              <Link href="#" className="flex items-center text-sm text-white">
+                Selengkapnya
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  className="ml-1"
+                >
+                  <path d="M5 12h14"></path>
+                  <path d="m12 5 7 7-7 7"></path>
+                </svg>
+              </Link>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   );
 };
 
