@@ -58,12 +58,12 @@ const Banner = () => {
     return () => clearInterval(interval);
   }, []);
   return (
-    <div className="relative h-[300px] md:h-[500px] w-full overflow-hidden sm:h-[600px]">
+    <div className="relative -z-50 h-[300px] md:h-[500px] w-full overflow-hidden sm:h-[600px]">
       {/* Slides */}
       {banners.map((banner, index) => (
         <div
           key={banner.id}
-          className={`absolute inset-0 h-full w-full transition-opacity duration-1000 ${
+          className={`absolute inset-0 -z-50 h-full w-full transition-opacity duration-1000 ${
             index === currentSlide
               ? "opacity-100"
               : "opacity-0 pointer-events-none"
@@ -72,7 +72,7 @@ const Banner = () => {
           <img
             src={banner.image}
             alt={banner.title}
-            className="object-cover w-full"
+            className="object-cover w-full -z-50"
           />
 
           <div className="absolute inset-0 flex flex-col items-center justify-center px-4 text-center text-white md:items-start md:px-16 md:text-left">
