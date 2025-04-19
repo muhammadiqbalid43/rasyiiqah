@@ -1,7 +1,5 @@
 import { cn } from "@/lib/utils";
-import { useState } from "react";
 import { Button } from "./ui/button";
-import { MessageCircle, X } from "lucide-react";
 
 interface FloatingWhatsAppProps {
   phoneNumber: string;
@@ -15,12 +13,8 @@ const FloatingWhatsapp = ({
   phoneNumber,
   message = "Hello, I have a question about your services.",
   position = "bottom-right",
-  showPopup = true,
-  popupMessage = "Konsultasi",
   className,
 }: FloatingWhatsAppProps) => {
-  const [isPopupVisible, setIsPopupVisible] = useState(showPopup);
-
   const handleWhatsAppClick = () => {
     // Format phone number (remove any non-digit characters)
     const formattedPhone = phoneNumber.replace(/\D/g, "");
@@ -32,11 +26,6 @@ const FloatingWhatsapp = ({
 
     // Open WhatsApp in a new tab
     window.open(whatsappUrl, "_blank");
-  };
-
-  const closePopup = (e: React.MouseEvent) => {
-    e.stopPropagation();
-    setIsPopupVisible(false);
   };
 
   const positionClasses = {
@@ -51,26 +40,12 @@ const FloatingWhatsapp = ({
         className
       )}
     >
-      {isPopupVisible && (
-        <div className="flex items-center px-4 py-2 bg-white rounded-full shadow-lg">
-          <span className="mr-2 text-sm font-medium">{popupMessage}</span>
-          <Button
-            variant="ghost"
-            size="icon"
-            className="w-6 h-6"
-            onClick={closePopup}
-          >
-            <X className="w-4 h-4" />
-            <span className="sr-only">Close</span>
-          </Button>
-        </div>
-      )}
       <Button
         onClick={handleWhatsAppClick}
-        className="size-14 rounded-full bg-[#25D366] hover:bg-[#22c55e] shadow-lg"
-        size="icon"
+        className="w-[250px] h-[50px] flex  bg-[#25D366] rounded-full hover:bg-[#22c55e] shadow-lg"
       >
-        <MessageCircle className="text-white h-7 w-7" />
+        <img src="/what4.png" alt="whatsapp icon" className="w-[30px]" />
+        <p className="text-xl font-bold">Appoinment Here</p>
 
         <span className="sr-only">Contact us on WhatsApp</span>
       </Button>

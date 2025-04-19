@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import { Button } from "../ui/button";
-import Link from "next/link";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
 const banners = [
@@ -13,7 +12,6 @@ const banners = [
       "https://images.pexels.com/photos/11667465/pexels-photo-11667465.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     cta: "Lihat Paket",
     link: "/packages/ramadhan",
-    color: "from-green-900/80 to-green-950/90",
   },
   {
     id: 2,
@@ -24,7 +22,6 @@ const banners = [
       "https://images.pexels.com/photos/31565687/pexels-photo-31565687/free-photo-of-view-of-abraj-al-bait-towers-in-mecca-saudi-arabia.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     cta: "Pesan Sekarang",
     link: "/packages/turkey",
-    color: "from-blue-900/80 to-blue-950/90",
   },
   {
     id: 3,
@@ -35,7 +32,6 @@ const banners = [
       "https://images.pexels.com/photos/11667465/pexels-photo-11667465.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     cta: "Info Lebih Lanjut",
     link: "/packages/family",
-    color: "from-emerald-900/80 to-emerald-950/90",
   },
 ];
 
@@ -78,23 +74,21 @@ const Banner = () => {
             alt={banner.title}
             className="object-cover w-full"
           />
-          <div
-            className={`absolute inset-0 bg-gradient-to-r ${banner.color}`}
-          />
+
           <div className="absolute inset-0 flex flex-col items-center justify-center px-4 text-center text-white md:items-start md:px-16 md:text-left">
-            <h1 className="mb-2 text-3xl font-bold md:text-5xl">
+            {/* <h1 className="mb-2 text-3xl font-bold md:text-5xl">
               {banner.title}
             </h1>
             <p className="max-w-md mb-6 text-lg md:text-xl">
               {banner.description}
-            </p>
-            <Button
+            </p> */}
+            {/* <Button
               asChild
               size="lg"
               className="bg-green-600 hover:bg-green-700"
             >
               <Link href={banner.link}>{banner.cta}</Link>
-            </Button>
+            </Button> */}
           </div>
         </div>
       ))}

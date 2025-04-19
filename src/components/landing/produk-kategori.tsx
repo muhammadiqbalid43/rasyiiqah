@@ -4,30 +4,36 @@ const ProdukKategori = () => {
   return (
     <div className="mt-24">
       <div className="container mx-auto ">
-        <div className="grid grid-cols-2 md:grid-cols-6  w-[390px] md:w-full h-[380px] md:h-[150px] bg-gray-200 rounded-xl ">
+        <div className="grid grid-cols-2 place-items-center md:grid-cols-6  w-[390px] md:w-full h-[380px] md:h-[150px]  rounded-xl ">
           <img
             src="https://www.dwinstravel.com/wp-content/uploads/2024/07/005-Logo-PPIU-Sertified-768x457.webp"
             alt="image"
+            className="w-[150px] md:w-[200px]"
           />
           <img
             src="https://www.dwinstravel.com/wp-content/uploads/2024/07/006-Logo-Siskopatuh-768x457.webp"
             alt="image-2"
+            className="w-[150px] md:w-[200px]"
           />
           <img
             src="https://www.dwinstravel.com/wp-content/uploads/2024/07/001-Logo-5-Pasti-Umroh-768x457.webp"
             alt="image-3"
+            className="w-[150px] md:w-[200px]"
           />
           <img
             src="https://www.dwinstravel.com/wp-content/uploads/2024/07/002-Logo-Kemenag-768x457.webp"
             alt="image-4"
+            className="w-[150px] md:w-[200px]"
           />
           <img
             src="https://www.dwinstravel.com/wp-content/uploads/2024/07/003-Logo-Iata-768x457.webp"
             alt="image-5"
+            className="w-[150px] md:w-[200px]"
           />
           <img
             src="https://www.dwinstravel.com/wp-content/uploads/2024/07/004-Logo-Kan-768x457.webp"
             alt="image-6"
+            className="w-[150px] md:w-[200px]"
           />
         </div>
       </div>
