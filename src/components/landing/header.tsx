@@ -14,11 +14,12 @@ const Header = () => {
     <nav className="relative z-50 h-20 shadow-sm">
       <div className="h-20 mx-auto max-w-7xl md:px-6 lg:px-8 ">
         <div className="flex items-center justify-between h-20 ">
-          <div className="flex items-center">
+          <div className="flex items-center justify-center gap-6">
             <Link href="/">
               {" "}
               <Image src="/logo-travel.jpg" width={50} height={50} alt="logo" />
             </Link>
+            <p className="font-bold">PT RASYIIQAH TOUR AND TRAVEL</p>
           </div>
 
           {/* DESKTOP */}
