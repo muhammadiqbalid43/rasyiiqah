@@ -282,7 +282,12 @@ const TestPage = () => {
                   Muttawatir Ulama Bengkulu
                 </h3>
                 <div className="flex justify-center">
-                  <div className="w-[200px] h-[200px] bg-gray-200 rounded"></div>
+                  {/* <div className="w-[200px] h-[200px] bg-gray-200 rounded"></div> */}
+                  <img
+                    src="/ust-junaidi.jpg"
+                    alt="ust junaidi"
+                    className="w-[200px] h-[200px] rounded object-cover"
+                  />
                 </div>
                 <p className="mt-2 text-center text-gray-600">
                   Didampingi oleh ulama terpercaya dari Bengkulu sebagai
