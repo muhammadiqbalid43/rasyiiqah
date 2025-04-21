@@ -9,27 +9,32 @@ import {
 
 const features = [
   {
-    title: "Pengalaman Baru",
+    title: "Berizin lengkap",
     description:
-      "Kami menawarkan pengalaman baru dalam ibadah umrah. Anda mendapatkan standar pengalaman, dan lain-lain yang bisa Anda bersama kami.",
+      "Memiliki izin resmi dari Kementerian Agama dan legalitas yang lengkap.",
     icon: Crown,
   },
   {
-    title: "Tentukan Sendiri",
+    title: "Informasi perusahaan mudah di akses",
     description:
-      "Nikmati pilihan fasilitas yang relatif disesuaikan dan wujudkan perjalanan umrah Anda bersama kami.",
+      "Website resmi dan kantor fisik yang dapat dikunjungi langsung.",
     icon: ThumbsUp,
   },
   {
-    title: "Umrah Freshnel",
-    description:
-      "Kami menawarkan paket Umrah Freshnel, pilihan untuk pengalaman yang lebih hemat.",
+    title: "Informasi Keberangkatan pasti",
+    description: "Jadwal keberangkatan yang jelas dan terjamin",
     icon: Briefcase,
   },
   {
-    title: "Kalkulator Trip",
+    title: "Fasilitas lengkap",
     description:
-      "Gunakan kalkulator perjalanan kami yang lebih mudah dalam memperkirakan biaya perjalanan dan melakukan perencanaan.",
+      "Akomodasi, transportasi, dan layanan terbaik selama perjalanan umroh.",
+    icon: Calculator,
+  },
+  {
+    title: "Muttawatir Ulama Bengkulu",
+    description:
+      "Didampingi oleh ulama terpercaya dari Bengkulu sebagai pembimbing ibadah.",
     icon: Calculator,
   },
 ];
@@ -41,7 +46,7 @@ const Offer = () => {
         <h1 className="mb-12 text-3xl font-bold text-green-600 md:text-4xl">
           Bersama Rasyiiqah, Perjalanan Anda penuh makna
         </h1>
-        <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4">
+        <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-5">
           {features.map((feature, index) => (
             <Card
               key={index}
