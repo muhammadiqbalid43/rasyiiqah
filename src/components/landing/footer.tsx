@@ -7,8 +7,14 @@ const Footer = () => {
       <div className="container px-4 mx-auto">
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
           <div>
-            <h3 className="mb-4 text-lg font-bold text-white">Tentang Kami</h3>
-            <p className="mb-4 text-sm">
+            <div>
+              {/* <h3 className="mb-4 text-lg font-bold text-white">Tentang Kami</h3> */}
+              <div className="flex items-center gap-3">
+                <img src="/logo-travel.jpg" className="w-[50px]" alt="logo" />
+                <p>PT RASYIIQAH TOUR AND TRAVEL</p>
+              </div>
+            </div>
+            <p className="mt-3 mb-4 text-sm">
               Layanan umroh terpercaya dengan pengalaman lebih dari 10 tahun
               melayani jamaah Indonesia.
             </p>
