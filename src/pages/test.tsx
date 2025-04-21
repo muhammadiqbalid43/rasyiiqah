@@ -12,6 +12,8 @@ import {
 import { Check, MapPin, Star, Users } from "lucide-react";
 import Image from "next/image";
 
+const images = ["/img1.jpg", "/img2.jpg", "/img3.png"];
+
 const TestPage = () => {
   return (
     <div className="flex flex-col min-h-screen">
@@ -190,14 +192,16 @@ const TestPage = () => {
                 <div className="flex justify-center">
                   <Carousel className="w-[270px] max-w-xs">
                     <CarouselContent>
-                      {Array.from({ length: 5 }).map((_, index) => (
+                      {images.map((src, index) => (
                         <CarouselItem key={index}>
                           <div className="p-1">
                             <Card>
                               <CardContent className="flex items-center justify-center p-6 aspect-square">
-                                <span className="text-4xl font-semibold">
-                                  {index + 1}
-                                </span>
+                                <img
+                                  src={src}
+                                  alt={`Image ${index + 1}`}
+                                  className="object-cover w-full h-full rounded-lg"
+                                />
                               </CardContent>
                             </Card>
                           </div>
