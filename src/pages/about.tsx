@@ -166,61 +166,61 @@ const AboutPage = () => {
           </p>
         </div>
 
-        <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-5">
-          <Card className="overflow-hidden">
-            <div className="w-full overflow-hidden aspect-square h-[450px] md:h-[400px]">
+        <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-5 place-items-center">
+          <Card className="w-[300px] h-[430px] flex justify-center flex-col ">
+            <div className="w-full    h-[400px] md:h-[400px]">
               <img
                 src="/1.jpeg"
                 alt="komisaris"
-                className="w-[400px] h-[450px] md:h-[400px] object-cover"
+                className="object-contain rounded-t-md"
               />
             </div>
             <CardContent className="p-4 text-center">
               <h3 className="text-lg font-bold">Komisaris Utama</h3>
             </CardContent>
           </Card>
-          <Card className="overflow-hidden">
-            <div className="w-full overflow-hidden aspect-square h-[450px] md:h-[400px]">
+          <Card className="w-[300px] h-[430px] flex justify-center flex-col ">
+            <div className="w-full    h-[400px] md:h-[400px]">
               <img
                 src="/2.png"
                 alt="komisaris"
-                className="w-[400px] h-[450px] md:h-[400px] object-cover"
+                className="object-contain rounded-t-md"
               />
             </div>
             <CardContent className="p-4 text-center">
               <h3 className="text-lg font-bold">Komisaris</h3>
             </CardContent>
           </Card>
-          <Card className="overflow-hidden">
-            <div className="w-full overflow-hidden aspect-square h-[450px] md:h-[400px]">
+          <Card className="w-[300px] h-[430px] flex justify-center flex-col ">
+            <div className="w-full    h-[400px] md:h-[400px]">
               <img
                 src="/3.jpeg"
                 alt="komisaris"
-                className="w-[400px] h-[450px] md:h-[400px] object-cover"
+                className="object-contain rounded-t-md"
               />
             </div>
             <CardContent className="p-4 text-center">
               <h3 className="text-lg font-bold">Direktur Utama</h3>
             </CardContent>
           </Card>
-          <Card className="overflow-hidden">
-            <div className="w-full overflow-hidden aspect-square h-[450px] md:h-[400px]">
+          <Card className="w-[300px] h-[430px] flex justify-center flex-col ">
+            <div className="w-full    h-[400px] md:h-[400px]">
               <img
                 src="/4.jpeg"
                 alt="komisaris"
-                className="w-[400px] h-[450px] md:h-[400px] object-cover"
+                className="object-contain rounded-t-md"
               />
             </div>
             <CardContent className="p-4 text-center">
               <h3 className="text-lg font-bold">Direktur</h3>
             </CardContent>
           </Card>
-          <Card className="overflow-hidden">
-            <div className="w-full overflow-hidden aspect-square h-[450px] md:h-[400px]">
+          <Card className="w-[300px] h-[430px] flex justify-center flex-col ">
+            <div className="w-full    h-[400px] md:h-[400px]">
               <img
                 src="/5.jpeg"
                 alt="komisaris"
-                className="w-[400px] h-[450px] md:h-[400px] object-cover"
+                className="object-contain rounded-t-md"
               />
             </div>
             <CardContent className="p-4 text-center">
